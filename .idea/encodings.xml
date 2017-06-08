@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/experience/Experience.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/experience/ExperienceManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/manager/PlanManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/manager/TimeManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/manager/WeekManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/manager/impl/PlanManagerImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/manager/impl/TimeManagerImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/manager/impl/WeekManagerImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/model/Plan.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/model/Time.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/test/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/DbManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/DbUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/InitializePlan.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/JDBCTemplate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/PropertyUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/SendMail.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/SocketUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/util/XmlUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/view/ExperienceView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/view/MainView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/view/PlanTimeView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/view/PlanView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/minihand/plantime/view/TestView.java" charset="UTF-8" />
+  </component>
+</project>

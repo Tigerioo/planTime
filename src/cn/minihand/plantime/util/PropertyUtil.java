@@ -12,7 +12,7 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 
 /**
- * ¶ÔÊôĞÔÎÄ¼şµÄ²Ù×÷
+ * å¯¹å±æ€§æ–‡ä»¶çš„æ“ä½œ
  * 
  * @author Destiny
  * 
@@ -27,7 +27,7 @@ public class PropertyUtil {
 	}
 	
 	/**
-	 * ¶ÁÈ¡ÅäÖÃÎÄ¼ş
+	 * è¯»å–é…ç½®æ–‡ä»¶
 	 * 
 	 * @return
 	 */
@@ -45,7 +45,7 @@ public class PropertyUtil {
 	}
 
 	/**
-	 * ¸ù¾İ²ÎÊıÀ´»ñÈ¡Öµ
+	 * æ ¹æ®å‚æ•°æ¥è·å–å€¼
 	 */
 	public String getValue(String name) {
 		Properties pro = getProperty();

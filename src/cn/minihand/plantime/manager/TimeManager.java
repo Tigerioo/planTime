@@ -4,7 +4,7 @@ import cn.minihand.plantime.model.Time;
 
 public interface TimeManager {
 
-	public Time findTime(int plan_id); //¸ù¾İidName,idValueÀ´²éÕÒTime¶ÔÏó
+	public Time findTime(int plan_id); //æ ¹æ®idName,idValueæ¥æŸ¥æ‰¾Timeå¯¹è±¡
 	
 	public void updateTime(Time time, int updateTime);
 	
@@ -14,9 +14,9 @@ public interface TimeManager {
 	
 	public void addTime(int plan_id);
 	
-	public void deleteAllPlans(); //É¾³ıËùÓĞÊı¾İ
+	public void deleteAllPlans(); //åˆ é™¤æ‰€æœ‰æ•°æ®
 	
-	public int[] getTaskNum();//»ñÈ¡ÈÎÎñ¼ÇÂ¼Êı add 2015-02-11 10:53:42
+	public int[] getTaskNum();//è·å–ä»»åŠ¡è®°å½•æ•° add 2015-02-11 10:53:42
 	
 	public String truncCountToHour(int count);
 }

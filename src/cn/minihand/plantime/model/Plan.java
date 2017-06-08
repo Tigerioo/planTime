@@ -8,11 +8,11 @@ public class Plan {
 	
 	private String planType;
 	
-	private int planTime;	//正常计划时间
+	private int planTime;	//姝ｅ父璁″垝鏃堕棿
 	
-	private int overPlanTime;	//加班计划时间
+	private int overPlanTime;	//鍔犵彮璁″垝鏃堕棿
 	
-	private int weekendPlanTime;	//周末计划时间
+	private int weekendPlanTime;	//鍛ㄦ湯璁″垝鏃堕棿
 
 	public int getPlan_id() {
 		return plan_id;

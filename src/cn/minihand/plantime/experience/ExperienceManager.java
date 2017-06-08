@@ -30,7 +30,7 @@ import com.newland.bg.commontools.file.FileUtil;
  *
  * @author Lewis.Lynn
  *
- * @version 1.0 CreateTime£º2013Äê8ÔÂ27ÈÕ ÏÂÎç3:15:05
+ * @version 1.0 CreateTimeï¼š2013å¹´8æœˆ27æ—¥ ä¸‹åˆ3:15:05
  */
 
 public class ExperienceManager {
@@ -38,16 +38,16 @@ public class ExperienceManager {
 	private static Logger logger = Logger.getLogger(ExperienceManager.class);
 	
 	/**
-	 * »ñÈ¡µ±Ç°µÄ¾­ÑéĞÅÏ¢
+	 * è·å–å½“å‰çš„ç»éªŒä¿¡æ¯
 	 * @return
 	 */
 	private static Map<String, Integer> getCurrentLevelInfo(File file){
 		Map<String, Integer> reMap = new HashMap<String, Integer>();
 		
 		String content = FileUtil.readFile(file);
-		int level = 1;//µ±Ç°µÈ¼¶
-		int currentExp = 0;//µ±Ç°¾­Ñé
-		if(content.contains("###")){//°üº¬Ö¸¶¨·Ö¸ô·û
+		int level = 1;//å½“å‰ç­‰çº§
+		int currentExp = 0;//å½“å‰ç»éªŒ
+		if(content.contains("###")){//åŒ…å«æŒ‡å®šåˆ†éš”ç¬¦
 			String[] strArray = content.split("###");
 			if(strArray.length == 2){
 				String experience = strArray[0];
@@ -57,7 +57,7 @@ public class ExperienceManager {
 				currentExp = Integer.parseInt(expArray[0].trim());
 			}
 			
-		}else {//ÎÄ¼şÄÚÈİ²»ÕıÈ·£¬ÎªµÈ¼¶1
+		}else {//æ–‡ä»¶å†…å®¹ä¸æ­£ç¡®ï¼Œä¸ºç­‰çº§1
 			FileUtil.writeContentToFile(file, "0/10###1");
 		}
 //		System.out.println("current level : " + level);
@@ -75,7 +75,7 @@ public class ExperienceManager {
 			logger.error("file experience is not exist! " + e.toString(), e);
 		}
 		
-		if(!file.exists()){//ÎÄ¼ş²»´æÔÚ£¬Ôò´´½¨
+		if(!file.exists()){//æ–‡ä»¶ä¸å­˜åœ¨ï¼Œåˆ™åˆ›å»º
 			try {
 				file.createNewFile();
 			} catch (IOException e) {
@@ -86,20 +86,20 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * Éı¼¶
+	 * å‡çº§
 	 */
 	public static void upgrade(){
 		File file = loadFile();
 		Map<String, Integer> currentInfo = getCurrentLevelInfo(file);
-		int level = currentInfo.get("level");//µ±Ç°µÈ¼¶
-		int exp = currentInfo.get("experience");//µ±Ç°¾­Ñé
-		int totalExp = getExpByLevel(level);//µ±Ç°µÈ¼¶µÄ×Ü¾­Ñé
-		int newestExp = 0;//×îĞÂµÄ¾­ÑéÖµ£¬Éı¼¶ÍêºóµÄ
-		int newestLevel = 0;//×îĞÂµÄµÈ¼¶£¬Éı¼¶ÍêºóµÄ
+		int level = currentInfo.get("level");//å½“å‰ç­‰çº§
+		int exp = currentInfo.get("experience");//å½“å‰ç»éªŒ
+		int totalExp = getExpByLevel(level);//å½“å‰ç­‰çº§çš„æ€»ç»éªŒ
+		int newestExp = 0;//æœ€æ–°çš„ç»éªŒå€¼ï¼Œå‡çº§å®Œåçš„
+		int newestLevel = 0;//æœ€æ–°çš„ç­‰çº§ï¼Œå‡çº§å®Œåçš„
 		int newestTotalExp = 0;
 		
-		exp = exp+1;//ÕÇ¾­Ñé
-		if(exp >= totalExp){//´ïµ½µ±Ç°µÈ¼¶µÄ×Ü¾­Ñé£¬ÔòÉı¼¶
+		exp = exp+1;//æ¶¨ç»éªŒ
+		if(exp >= totalExp){//è¾¾åˆ°å½“å‰ç­‰çº§çš„æ€»ç»éªŒï¼Œåˆ™å‡çº§
 			newestLevel = level+1;
 			newestExp = 0;
 		}else {
@@ -113,7 +113,7 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * »ñÈ¡µ±Ç°µÈ¼¶µÄ·¬ÇÑÉı¼¶×ÜÊı
+	 * è·å–å½“å‰ç­‰çº§çš„ç•ªèŒ„å‡çº§æ€»æ•°
 	 * @param level
 	 * @return
 	 */
@@ -159,7 +159,7 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * »ñÈ¡µ±Ç°µÈ¼¶
+	 * è·å–å½“å‰ç­‰çº§
 	 * @return
 	 */
 	public static int getCurrentLevel(){
@@ -169,7 +169,7 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * »ñÈ¡µ±Ç°¾­ÑéÇé¿ö
+	 * è·å–å½“å‰ç»éªŒæƒ…å†µ
 	 * @return
 	 */
 	public static String getCurrentExpInfo(){
@@ -182,7 +182,7 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * »ñÈ¡µ±Ç°Ê±¼ä
+	 * è·å–å½“å‰æ—¶é—´
 	 * add since v1.4.1
 	 * @return
 	 */
@@ -192,7 +192,7 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * ±£´æÃ¿´Î¼ÇÂ¼µ½ÎÄ¼ş
+	 * ä¿å­˜æ¯æ¬¡è®°å½•åˆ°æ–‡ä»¶
 	 * add since v1.4.1
 	 * @param beginTime
 	 * @param end_time
@@ -220,7 +220,7 @@ public class ExperienceManager {
 	}
 	
 	/**
-	 * »ñÈ¡½ñÈÕ·¬ÇÑ´ÎÊı
+	 * è·å–ä»Šæ—¥ç•ªèŒ„æ¬¡æ•°
 	 * add since v1.4.1
 	 * @return
 	 */
@@ -244,7 +244,7 @@ public class ExperienceManager {
 	
 	/**
 	 * add since v1.4.1
-	 * ±£´æµ½upfileÀï£¬µÈ´ıÏÂ´ÎÍøÂçÍ¨µÄÊ±ºòÉÏ´«
+	 * ä¿å­˜åˆ°upfileé‡Œï¼Œç­‰å¾…ä¸‹æ¬¡ç½‘ç»œé€šçš„æ—¶å€™ä¸Šä¼ 
 	 * @param monthDir
 	 * @param dayDir
 	 * @param fileName
@@ -262,7 +262,7 @@ public class ExperienceManager {
 	
 	/**
 	 * add since v1.4.1
-	 * ½«ÉÏ´«Ê§°ÜµÄÎÄ¼şÉÏ´«ÖÁ·şÎñÆ÷
+	 * å°†ä¸Šä¼ å¤±è´¥çš„æ–‡ä»¶ä¸Šä¼ è‡³æœåŠ¡å™¨
 	 */
 	public static String sendUpFileToServer(){
 		if(!SocketUtil.isConnected()) {
@@ -281,14 +281,14 @@ public class ExperienceManager {
 				}
 			}
 		}else {
-			logger.error("upfileÎÄ¼ş¼Ğ²»´æÔÚ");
-			return "upfileÎÄ¼ş¼Ğ²»´æÔÚ";
+			logger.error("upfileæ–‡ä»¶å¤¹ä¸å­˜åœ¨");
+			return "upfileæ–‡ä»¶å¤¹ä¸å­˜åœ¨";
 		}
 		return "upload success!";
 	}
 	
 	/**
-	 * »ñÈ¡ÉÏ´ÎµÄÈÎÎñÄÚÈİ
+	 * è·å–ä¸Šæ¬¡çš„ä»»åŠ¡å†…å®¹
 	 */
 	public static String getLastContent(){
 		File lastContentFile = new File("./lastContent");
@@ -297,7 +297,7 @@ public class ExperienceManager {
 	}
 		
 	/**
-	 * ¼ÇÂ¼±¾´ÎÈÎÎñÄÚÈİ
+	 * è®°å½•æœ¬æ¬¡ä»»åŠ¡å†…å®¹
 	 * @param task_name
 	 */
 	public static void saveLastContent(String task_name){

@@ -8,17 +8,17 @@ import org.apache.log4j.Logger;
 public class DbManager {
 	static Logger logger = Logger.getLogger(DbManager.class);
 
-	private String driverClassName; // Êı¾İ¿âÇı¶¯³ÌĞò
-	private String url; // Êı¾İ¿âurl
-	private String username; // dbaÕÊºÅ
-	private String password; // ÃÜÂë
-	private int initialSize; // ³õÊ¼»¯Á¬½ÓÊıÁ¿
-	private int maxIdle; // ×î´óidleÊı
-	private int minIdle; // ×îĞ¡idleÊı
-	private long maxWait; // ³¬Ê±»ØÊÕÊ±¼ä
+	private String driverClassName; // æ•°æ®åº“é©±åŠ¨ç¨‹åº
+	private String url; // æ•°æ®åº“url
+	private String username; // dbaå¸å·
+	private String password; // å¯†ç 
+	private int initialSize; // åˆå§‹åŒ–è¿æ¥æ•°é‡
+	private int maxIdle; // æœ€å¤§idleæ•°
+	private int minIdle; // æœ€å°idleæ•°
+	private long maxWait; // è¶…æ—¶å›æ”¶æ—¶é—´
 	private int maxActive;
 
-	private BasicDataSource pool; // Êı¾İ¿âÁ¬½Ó³Ø
+	private BasicDataSource pool; // æ•°æ®åº“è¿æ¥æ± 
 
 	public DbManager(){
 		
@@ -42,7 +42,7 @@ public class DbManager {
 		this.pool.setMaxIdle(this.maxIdle);
 		this.pool.setMaxWait(maxWait);
 		this.pool.setMaxActive(this.maxActive);
-		System.out.println("------------------------------³õÊ¼»¯Á¬½Ó³Ø-----------------------------------------");
+		System.out.println("------------------------------åˆå§‹åŒ–è¿æ¥æ± -----------------------------------------");
 	}
 
 	public String getDriverClassName() {

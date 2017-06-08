@@ -21,12 +21,12 @@ public class InitializePlan {
 	private TimeManager timeManager = new TimeManagerImpl();
 	private WeekManager weekManager = new WeekManagerImpl();
 	
-	// ³õÊ¼»¯Êı¾İ
+	// åˆå§‹åŒ–æ•°æ®
 	public void init() {
 		XmlUtil util = new XmlUtil();
 		List<Plan> plans = util.readXml("./conf/myplan.xml");
 		if (plans.size() != 0) {
-			logger.info("³É¹¦¶ÁÈ¡plan,×Ü¹²" + plans.size() + "¸ö");
+			logger.info("æˆåŠŸè¯»å–plan,æ€»å…±" + plans.size() + "ä¸ª");
 			dropAllPlans(plans);
 			for (Iterator iterator = plans.iterator(); iterator.hasNext();) {
 				Plan plan = (Plan) iterator.next();

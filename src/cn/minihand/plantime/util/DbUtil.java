@@ -12,7 +12,7 @@ import cn.minihand.plantime.manager.impl.WeekManagerImpl;
 public class DbUtil {
 
 	private static Logger logger = Logger.getLogger(DbUtil.class);
-	private static String filePath = "./conf/database.properties"; // 数据配置文件
+	private static String filePath = "./conf/database.properties"; // 鏁版嵁閰嶇疆鏂囦欢
 	public static DbManager db ;
 	/*public static PlanManager planmManager;
 	public static TimeManager timeManager;

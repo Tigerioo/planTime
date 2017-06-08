@@ -14,9 +14,9 @@ public interface PlanManager {
 	
 	public void updatePlan(Plan plan);
 	
-	public void deleteAllPlans(); //É¾³ıËùÓĞÊı¾İ
+	public void deleteAllPlans(); //åˆ é™¤æ‰€æœ‰æ•°æ®
 	
-	public List<Plan> findByDate();	//°´ÈÕÆÚÀ´²éÕÒÊÇ·ñ¼ÓÔØ
+	public List<Plan> findByDate();	//æŒ‰æ—¥æœŸæ¥æŸ¥æ‰¾æ˜¯å¦åŠ è½½
 	
-	public Plan findByPlanName(String planName); //¸ù¾İ¼Æ»®Ãû³ÆÀ´»ñÈ¡¼Æ»®
+	public Plan findByPlanName(String planName); //æ ¹æ®è®¡åˆ’åç§°æ¥è·å–è®¡åˆ’
 }

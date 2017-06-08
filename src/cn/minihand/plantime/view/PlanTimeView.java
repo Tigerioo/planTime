@@ -39,45 +39,45 @@ public class PlanTimeView implements ActionListener, KeyListener{
 	private JButton yesOverTime, noOverTime, valdPwd;
 	private JTextField field;
 	private JLabel psw ;
-	private JComboBox comboBox; //ÏÂÀ­¿ò
+	private JComboBox comboBox; //ä¸‹æ‹‰æ¡†
 	private boolean isOverTime;
 	
 	public void lunchFrame(){
-		DbUtil.getDb(); //¼ÓÔØÊı¾İ
+		DbUtil.getDb(); //åŠ è½½æ•°æ®
 		planManager = new PlanManagerImpl();
 		frame = new JFrame();
 		
 		panel = new JPanel();
 		
-		psw = new JLabel("ÇëÊäÈëÃÜÂë£º");
+		psw = new JLabel("è¯·è¾“å…¥å¯†ç ï¼š");
 		psw.addKeyListener(this);
 		panel.add(psw);
 		field = new JTextField(10);
 		panel.add(field);
 		
-		valdPwd = new JButton("µÇÂ¼");
+		valdPwd = new JButton("ç™»å½•");
 		valdPwd.addActionListener(this);
 		panel.add(valdPwd);
 		
 		frame.add(panel);
 		
 		frame.setSize(100, 150);
-		frame.setTitle("¼Æ»®¼ÆÊ±Æ÷");
+		frame.setTitle("è®¡åˆ’è®¡æ—¶å™¨");
 		
-		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE); // °´ÏÂ¹Ø±Õ°´Å¥Ê±½áÊø½ø³Ì
+		frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE); // æŒ‰ä¸‹å…³é—­æŒ‰é’®æ—¶ç»“æŸè¿›ç¨‹
 		frame.setLocation(600, 200);
 		frame.setVisible(true);
 	}
 	
 	public void isOverTime(){
 		
-		yesOverTime = new JButton("¼Ó°à");
+		yesOverTime = new JButton("åŠ ç­");
 		yesOverTime.addActionListener(this);
 		
-		noOverTime = new JButton("²»¼Ó°à");
+		noOverTime = new JButton("ä¸åŠ ç­");
 		noOverTime.addActionListener(this);
 		
-		//reload = new JButton("ÖØĞÂ¼ÓÔØÊı¾İ");
+		//reload = new JButton("é‡æ–°åŠ è½½æ•°æ®");
 		//reload.addActionListener(this);
 		
 		panel.add(yesOverTime);
@@ -89,9 +89,9 @@ public class PlanTimeView implements ActionListener, KeyListener{
 		this.isOverTime = isOverTime;
 		plans = planManager.findByDate();
 		comboBox = new JComboBox();
-		comboBox.addItem("ÇëÑ¡Ôñ...");
+		comboBox.addItem("è¯·é€‰æ‹©...");
 		int size = plans.size();
-		logger.info("×Ü¹²¼ÓÔØ" + size + "¸ö¼Æ»®");
+		logger.info("æ€»å…±åŠ è½½" + size + "ä¸ªè®¡åˆ’");
 		
 		for (Iterator<Plan> iterator = plans.iterator(); iterator.hasNext();) {
 			Plan plan = (Plan) iterator.next();

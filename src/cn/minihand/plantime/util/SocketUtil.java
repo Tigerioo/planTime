@@ -23,7 +23,7 @@ import org.apache.log4j.Logger;
  *
  * @author Lewis.Lynn
  *
- * @version 1.0 CreateTime£º2015Äê2ÔÂ3ÈÕ ÏÂÎç4:37:07
+ * @version 1.0 CreateTimeï¼š2015å¹´2æœˆ3æ—¥ ä¸‹åˆ4:37:07
  */
 
 public class SocketUtil {

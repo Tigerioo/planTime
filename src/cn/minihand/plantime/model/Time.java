@@ -6,7 +6,7 @@ public class Time {
 
 	private int time_id;
 	private int plan_id;
-	private int dayCompleteTime; // 当天完成的情况：单位：秒
+	private int dayCompleteTime; // 褰撳ぉ瀹屾垚鐨勬儏鍐碉細鍗曚綅锛氱
 	private int weekCompleteTime;
 	private int monthCompleteTime;
 	private int yearCompleteTime;

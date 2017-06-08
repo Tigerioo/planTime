@@ -24,10 +24,10 @@ public class PlanManagerImpl implements PlanManager{
 		timeManager = new TimeManagerImpl();
 	}
 	
-	//Ìí¼Ó¼Æ»®ÊÇ¶ÔÓ¦µÄÌí¼ÓÒ»¸ötime
+	//æ·»åŠ è®¡åˆ’æ˜¯å¯¹åº”çš„æ·»åŠ ä¸€ä¸ªtime
 	public void addPlan(Plan plan) {
-		template.add(plan);	//Ìí¼Ó¼Æ»®
-		//»ñÈ¡plan_id
+		template.add(plan);	//æ·»åŠ è®¡åˆ’
+		//è·å–plan_id
 		Plan newPlan = (Plan)this.template.findByField(new Plan(), "planName", plan.getPlanName());
 		timeManager.addTime(newPlan.getPlan_id());
 	}
@@ -49,19 +49,19 @@ public class PlanManagerImpl implements PlanManager{
 		this.template.deleteAll("t_plan");
 	}
 
-	//°´ÀàĞÍ£¬°´ÖÜÆÚÀ´¼ÓÔØplan
+	//æŒ‰ç±»å‹ï¼ŒæŒ‰å‘¨æœŸæ¥åŠ è½½plan
 	public List<Plan> findByDate() {
 		List<Plan> plans = this.template.findAll(new Plan());
 		List<Plan> temp = new ArrayList<Plan>();
 		for (Iterator<Plan> iterator = plans.iterator(); iterator.hasNext();) {
 			Plan plan = (Plan) iterator.next();
-			//ÅĞ¶ÏÊÇ·ñÊÇÖÜÄ©
+			//åˆ¤æ–­æ˜¯å¦æ˜¯å‘¨æœ«
 			Calendar current = new GregorianCalendar();
 			int weekend = current.get(Calendar.DAY_OF_WEEK);
-			if(weekend!=1 && weekend!=7){//²»ÊÇÖÜÄ©,ÒÆ³ıÖÜÄ©µÄ¼Æ»®
-				if(plan.getPlanType().equalsIgnoreCase("week")){//ÅĞ¶ÏÊÇ·ñÊÇweek
+			if(weekend!=1 && weekend!=7){//ä¸æ˜¯å‘¨æœ«,ç§»é™¤å‘¨æœ«çš„è®¡åˆ’
+				if(plan.getPlanType().equalsIgnoreCase("week")){//åˆ¤æ–­æ˜¯å¦æ˜¯week
 					//temp.add(plan);
-					logger.info("½ñÌì²»ÊÇÖÜÄ©£¬ÒÆ³ı¼Æ»®£º" + plan.getPlanName());
+					logger.info("ä»Šå¤©ä¸æ˜¯å‘¨æœ«ï¼Œç§»é™¤è®¡åˆ’ï¼š" + plan.getPlanName());
 				} else {
 					temp.add(plan);
 				}

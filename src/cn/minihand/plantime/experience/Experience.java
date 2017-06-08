@@ -14,7 +14,7 @@ package cn.minihand.plantime.experience;
  *
  * @author Lewis.Lynn
  *
- * @version 1.0 CreateTime£º2013Äê8ÔÂ27ÈÕ ÏÂÎç3:10:16
+ * @version 1.0 CreateTimeï¼š2013å¹´8æœˆ27æ—¥ ä¸‹åˆ3:10:16
  */
 
 public class Experience {

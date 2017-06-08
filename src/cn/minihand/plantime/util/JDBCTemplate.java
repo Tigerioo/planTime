@@ -26,7 +26,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 /**
- * JDBCÊı¾İ¿âÄ£°å£¬½øĞĞ¶ÔÏóµÄÔöÉ¾¸Ä²é
+ * JDBCæ•°æ®åº“æ¨¡æ¿ï¼Œè¿›è¡Œå¯¹è±¡çš„å¢åˆ æ”¹æŸ¥
  * 
  * @author Lingq
  * 
@@ -50,19 +50,19 @@ public class JDBCTemplate {
 		String className = obj.getClass().getSimpleName();
 		Connection conn = null;
 		Statement stmt = null;
-		StringBuffer insertSql = new StringBuffer(); // insertÓï¾ä
+		StringBuffer insertSql = new StringBuffer(); // insertè¯­å¥
 		insertSql.append("insert into T_" + className + "(" + className.toLowerCase() + "_id");
-		StringBuffer valueSql = new StringBuffer(); // valuesÓï¾ä
+		StringBuffer valueSql = new StringBuffer(); // valuesè¯­å¥
 		valueSql.append(" values(seq_" + className.toLowerCase() + ".nextval");
 
 		try {
-			Class c1 = obj.getClass(); // »ñµÃobjµÄclass
-			Field[] fields = c1.getDeclaredFields(); // »ñµÃËùÓĞ×Ö¶Î
-			AccessibleObject.setAccessible(fields, true); // ¿ÉÒÔ·ÃÎÊË½ÓĞ±äÁ¿
-			Method[] methods = c1.getDeclaredMethods(); // »ñµÃËùÓĞ·½·¨
-			HashMap values = this.getValues(obj, fields, methods); // ËùÓĞÊôĞÔºÍËù¶ÔÓ¦µÄÖµ
+			Class c1 = obj.getClass(); // è·å¾—objçš„class
+			Field[] fields = c1.getDeclaredFields(); // è·å¾—æ‰€æœ‰å­—æ®µ
+			AccessibleObject.setAccessible(fields, true); // å¯ä»¥è®¿é—®ç§æœ‰å˜é‡
+			Method[] methods = c1.getDeclaredMethods(); // è·å¾—æ‰€æœ‰æ–¹æ³•
+			HashMap values = this.getValues(obj, fields, methods); // æ‰€æœ‰å±æ€§å’Œæ‰€å¯¹åº”çš„å€¼
 			
-			// ¹¹ÔìSQLÓï¾ä
+			// æ„é€ SQLè¯­å¥
 			Iterator<Map.Entry<String, Object>> iter = values.entrySet().iterator();
 			while(iter.hasNext()){
 				Map.Entry<String, Object> entry = iter.next();
@@ -107,7 +107,7 @@ public class JDBCTemplate {
 	}
 
 	/**
-	 * É¾³ı¸Ã±íµÄËùÓĞÊı¾İ
+	 * åˆ é™¤è¯¥è¡¨çš„æ‰€æœ‰æ•°æ®
 	 * 
 	 * @param obj
 	 */
@@ -122,14 +122,14 @@ public class JDBCTemplate {
 
 			boolean result = stmt.execute(sql);
 
-			logger.info("É¾³ı±í" + tableName + "Êı¾İ³É¹¦!");
+			logger.info("åˆ é™¤è¡¨" + tableName + "æ•°æ®æˆåŠŸ!");
 		} catch (SQLException e) {
 			logger.error(e.toString());
 		}
 	}
 
 	/**
-	 * É¾³ıÒ»¸ö¶ÔÏó
+	 * åˆ é™¤ä¸€ä¸ªå¯¹è±¡
 	 * 
 	 * @param obj
 	 */
@@ -140,11 +140,11 @@ public class JDBCTemplate {
 		String sql = "";
 
 		try {
-			Class c1 = obj.getClass(); // »ñµÃobjµÄclass
-			Field[] fields = c1.getDeclaredFields(); // »ñµÃËùÓĞ×Ö¶Î
-			AccessibleObject.setAccessible(fields, true); // ¿ÉÒÔ·ÃÎÊË½ÓĞ±äÁ¿
-			Method[] methods = c1.getDeclaredMethods(); // »ñµÃËùÓĞ·½·¨
-			HashMap values = this.getValues(obj, fields, methods); // ËùÓĞÊôĞÔºÍËù¶ÔÓ¦µÄÖµ
+			Class c1 = obj.getClass(); // è·å¾—objçš„class
+			Field[] fields = c1.getDeclaredFields(); // è·å¾—æ‰€æœ‰å­—æ®µ
+			AccessibleObject.setAccessible(fields, true); // å¯ä»¥è®¿é—®ç§æœ‰å˜é‡
+			Method[] methods = c1.getDeclaredMethods(); // è·å¾—æ‰€æœ‰æ–¹æ³•
+			HashMap values = this.getValues(obj, fields, methods); // æ‰€æœ‰å±æ€§å’Œæ‰€å¯¹åº”çš„å€¼
 
 			Iterator iter = values.entrySet().iterator();
 			while (iter.hasNext()) {
@@ -156,7 +156,7 @@ public class JDBCTemplate {
 					sql = "delete from T_" + className + " where " + key + "="
 							+ value;
 					logger.info(sql);
-					// Á´½ÓÊı¾İ¿â£¬²¢É¾³ı
+					// é“¾æ¥æ•°æ®åº“ï¼Œå¹¶åˆ é™¤
 					conn = this.dbManager.getConn();
 					stmt = conn.createStatement();
 					stmt.execute(sql);
@@ -184,13 +184,13 @@ public class JDBCTemplate {
 		Statement stmt = null;
 		ResultSet rs = null;
 		HashMap results = new HashMap();
-		Class cl = obj.getClass(); // »ñµÃobjµÄclass
+		Class cl = obj.getClass(); // è·å¾—objçš„class
 
 		try {
 			String className = cl.getSimpleName();
-			Field[] fields = cl.getDeclaredFields(); // »ñµÃËùÓĞ×Ö¶Î
-			AccessibleObject.setAccessible(fields, true); // ¿ÉÒÔ·ÃÎÊË½ÓĞ±äÁ¿
-			Method[] methods = cl.getDeclaredMethods(); // »ñµÃËùÓĞ·½·¨
+			Field[] fields = cl.getDeclaredFields(); // è·å¾—æ‰€æœ‰å­—æ®µ
+			AccessibleObject.setAccessible(fields, true); // å¯ä»¥è®¿é—®ç§æœ‰å˜é‡
+			Method[] methods = cl.getDeclaredMethods(); // è·å¾—æ‰€æœ‰æ–¹æ³•
 
 			String sql = "select * from T_" + className + " where " + className
 					+ "_id=" + id;
@@ -207,8 +207,8 @@ public class JDBCTemplate {
 						String m1 = methodName.replaceFirst("set", "");
 						String temp1 = m1.substring(0, 1);
 						String temp2 = m1.replaceFirst(temp1, temp1
-								.toLowerCase()); // »ñµÃsetµÄÊôĞÔÃû
-						// Ö´ĞĞset·½·¨,²¢¸³Öµ
+								.toLowerCase()); // è·å¾—setçš„å±æ€§å
+						// æ‰§è¡Œsetæ–¹æ³•,å¹¶èµ‹å€¼
 						for (int j = 0; j < fields.length; j++) {
 							if (temp2.equalsIgnoreCase(fields[j].getName())) {
 								if ("String".equalsIgnoreCase(fields[j]
@@ -256,11 +256,11 @@ public class JDBCTemplate {
 	/**
 	 * 
 	 * @param obj
-	 *            Òª²éÕÒµÄ¶ÔÏó
+	 *            è¦æŸ¥æ‰¾çš„å¯¹è±¡
 	 * @param fieldName
-	 *            whereÓï¾äµÄ×Ö¶Î
+	 *            whereè¯­å¥çš„å­—æ®µ
 	 * @param fieldValue
-	 *            ¸Ã×Ö¶ÎµÄÖµ
+	 *            è¯¥å­—æ®µçš„å€¼
 	 * @return
 	 */
 	public Object findByField(Object obj, Object fieldName, Object fieldValue) {
@@ -268,15 +268,15 @@ public class JDBCTemplate {
 		Statement stmt = null;
 		ResultSet rs = null;
 		HashMap results = new HashMap();
-		Class cl = obj.getClass(); // »ñµÃobjµÄclass
+		Class cl = obj.getClass(); // è·å¾—objçš„class
 
 		try {
 			String className = cl.getSimpleName();
-			Field[] fields = cl.getDeclaredFields(); // »ñµÃËùÓĞ×Ö¶Î
-			AccessibleObject.setAccessible(fields, true); // ¿ÉÒÔ·ÃÎÊË½ÓĞ±äÁ¿
-			Method[] methods = cl.getDeclaredMethods(); // »ñµÃËùÓĞ·½·¨
+			Field[] fields = cl.getDeclaredFields(); // è·å¾—æ‰€æœ‰å­—æ®µ
+			AccessibleObject.setAccessible(fields, true); // å¯ä»¥è®¿é—®ç§æœ‰å˜é‡
+			Method[] methods = cl.getDeclaredMethods(); // è·å¾—æ‰€æœ‰æ–¹æ³•
 			String sql = "";
-			// ¸ù¾İ´«ÈëµÄ²ÎÊıÀàĞÍÀ´¹¹Ôìsql²éÑ¯Óï¾ä
+			// æ ¹æ®ä¼ å…¥çš„å‚æ•°ç±»å‹æ¥æ„é€ sqlæŸ¥è¯¢è¯­å¥
 			if ("Integer".equals(fieldValue.getClass().getSimpleName())) {
 				sql = "select * from T_" + className + " where " + fieldName
 						+ "=" + fieldValue;
@@ -298,8 +298,8 @@ public class JDBCTemplate {
 						String m1 = methodName.replaceFirst("set", "");
 						String temp1 = m1.substring(0, 1);
 						String temp2 = m1.replaceFirst(temp1, temp1
-								.toLowerCase()); // »ñµÃsetµÄÊôĞÔÃû
-						// Ö´ĞĞset·½·¨,²¢¸³Öµ
+								.toLowerCase()); // è·å¾—setçš„å±æ€§å
+						// æ‰§è¡Œsetæ–¹æ³•,å¹¶èµ‹å€¼
 						for (int j = 0; j < fields.length; j++) {
 							if (temp2.equalsIgnoreCase(fields[j].getName())) {
 								if ("String".equalsIgnoreCase(fields[j]
@@ -354,17 +354,17 @@ public class JDBCTemplate {
 		Connection conn = null;
 		Statement stmt = null;
 		StringBuffer updateSql = new StringBuffer("update T_" + className
-				+ " set "); // insertÓï¾ä
+				+ " set "); // insertè¯­å¥
 		int id = 0;
 
 		try {
-			Class c1 = obj.getClass(); // »ñµÃobjµÄclass
-			Field[] fields = c1.getDeclaredFields(); // »ñµÃËùÓĞ×Ö¶Î
-			AccessibleObject.setAccessible(fields, true); // ¿ÉÒÔ·ÃÎÊË½ÓĞ±äÁ¿
-			Method[] methods = c1.getDeclaredMethods(); // »ñµÃËùÓĞ·½·¨
-			HashMap values = this.getValues(obj, fields, methods); // ËùÓĞÊôĞÔºÍËù¶ÔÓ¦µÄÖµ
+			Class c1 = obj.getClass(); // è·å¾—objçš„class
+			Field[] fields = c1.getDeclaredFields(); // è·å¾—æ‰€æœ‰å­—æ®µ
+			AccessibleObject.setAccessible(fields, true); // å¯ä»¥è®¿é—®ç§æœ‰å˜é‡
+			Method[] methods = c1.getDeclaredMethods(); // è·å¾—æ‰€æœ‰æ–¹æ³•
+			HashMap values = this.getValues(obj, fields, methods); // æ‰€æœ‰å±æ€§å’Œæ‰€å¯¹åº”çš„å€¼
 
-			// ¹¹ÔìSQLÓï¾ä
+			// æ„é€ SQLè¯­å¥
 			Iterator<Map.Entry<String, Object>> iter = values.entrySet().iterator();
 			while(iter.hasNext()){
 				Map.Entry<String, Object> entry = iter.next();
@@ -412,7 +412,7 @@ public class JDBCTemplate {
 		Statement stmt = null;
 		ResultSet rs = null;
 		HashMap results = new HashMap();
-		Class cl = obj.getClass(); // »ñµÃobjµÄclass
+		Class cl = obj.getClass(); // è·å¾—objçš„class
 
 		try {
 			String className = cl.getSimpleName();
@@ -425,9 +425,9 @@ public class JDBCTemplate {
 			while (rs.next()) {
 				Object newObj = Class.forName(obj.getClass().getName())
 						.newInstance();
-				Field[] fields = newObj.getClass().getDeclaredFields(); // »ñµÃËùÓĞ×Ö¶Î
-				AccessibleObject.setAccessible(fields, true); // ¿ÉÒÔ·ÃÎÊË½ÓĞ±äÁ¿
-				Method[] methods = newObj.getClass().getDeclaredMethods(); // »ñµÃËùÓĞ·½·¨
+				Field[] fields = newObj.getClass().getDeclaredFields(); // è·å¾—æ‰€æœ‰å­—æ®µ
+				AccessibleObject.setAccessible(fields, true); // å¯ä»¥è®¿é—®ç§æœ‰å˜é‡
+				Method[] methods = newObj.getClass().getDeclaredMethods(); // è·å¾—æ‰€æœ‰æ–¹æ³•
 				for (int i = 0; i < methods.length; i++) {
 					Method method = methods[i];
 					String methodName = method.getName();
@@ -435,8 +435,8 @@ public class JDBCTemplate {
 						String m1 = methodName.replaceFirst("set", "");
 						String temp1 = m1.substring(0, 1);
 						String temp2 = m1.replaceFirst(temp1, temp1
-								.toLowerCase()); // »ñµÃsetµÄÊôĞÔÃû
-						// Ö´ĞĞset·½·¨,²¢¸³Öµ
+								.toLowerCase()); // è·å¾—setçš„å±æ€§å
+						// æ‰§è¡Œsetæ–¹æ³•,å¹¶èµ‹å€¼
 						for (int j = 0; j < fields.length; j++) {
 							if (temp2.equalsIgnoreCase(fields[j].getName())) {
 								if ("String".equalsIgnoreCase(fields[j]
@@ -488,7 +488,7 @@ public class JDBCTemplate {
 	}
 
 	/**
-	 * Ö´ĞĞÌØ¶¨SQLÓï¾ä£¬¼ì²éÊÇ·ñÓĞ·µ»ØÖµ
+	 * æ‰§è¡Œç‰¹å®šSQLè¯­å¥ï¼Œæ£€æŸ¥æ˜¯å¦æœ‰è¿”å›å€¼
 	 * 
 	 * @param sql
 	 * @return
@@ -515,7 +515,7 @@ public class JDBCTemplate {
 	}
 
 	/**
-	 * ×Ö¶ÎËù¶ÔÓ¦µÄÖµ£¬´æ·ÅÔÚHashMapÖĞ
+	 * å­—æ®µæ‰€å¯¹åº”çš„å€¼ï¼Œå­˜æ”¾åœ¨HashMapä¸­
 	 * 
 	 * @param obj
 	 * @param fields
@@ -547,7 +547,7 @@ public class JDBCTemplate {
 								maps.put(fieldName, method.invoke(obj, null));
 								break;
 							}
-						} else if ("Date".equals(type.getSimpleName())) {// dateÀàĞÍµÄ´¦Àí£¬²ÉÓÃto_dateº¯Êı×ª»»
+						} else if ("Date".equals(type.getSimpleName())) {// dateç±»å‹çš„å¤„ç†ï¼Œé‡‡ç”¨to_dateå‡½æ•°è½¬æ¢
 							if (method.invoke(obj, null) == null
 									|| method.invoke(obj, null).equals("")) {
 								break;
@@ -578,11 +578,11 @@ public class JDBCTemplate {
 	}
 
 	/**
-	 * ÅĞ¶Ïµ±Ç°ÊÇÄÇÖÖÊı¾İ¿âÁ¬½Ó
+	 * åˆ¤æ–­å½“å‰æ˜¯é‚£ç§æ•°æ®åº“è¿æ¥
 	 * 
 	 * @param xmlFileName
-	 *            ¸ù¾İspringµÄÅäÖÃÎÄ¼şÖĞµÄdataSourceÀ´Ê¶±ğ
-	 * @return ·µ»ØµÄÊÇÊı¾İ¿âÃû³Æ£¬Èç£ºmysql¡¢oracle
+	 *            æ ¹æ®springçš„é…ç½®æ–‡ä»¶ä¸­çš„dataSourceæ¥è¯†åˆ«
+	 * @return è¿”å›çš„æ˜¯æ•°æ®åº“åç§°ï¼Œå¦‚ï¼šmysqlã€oracle
 	 */
 	public String getDataSourceInfo(String xmlpath) {
 		String info = null;
@@ -591,11 +591,11 @@ public class JDBCTemplate {
 			Document document = reader.read(new File(xmlpath));
 			Element root = document.getRootElement();
 
-			// Ñ­»·¸ù½Úµã
+			// å¾ªç¯æ ¹èŠ‚ç‚¹
 			for (Iterator iter = root.elementIterator(); iter.hasNext();) {
-				Element bean = (Element) iter.next(); // »ñµÃÏÂÒ»¸ö½Úµã
-				String value = bean.attribute("id").getValue(); // idµÄÖ¸
-				// Èç¹ûÊÇdataSource¾Í¼ÌĞø
+				Element bean = (Element) iter.next(); // è·å¾—ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
+				String value = bean.attribute("id").getValue(); // idçš„æŒ‡
+				// å¦‚æœæ˜¯dataSourceå°±ç»§ç»­
 				if ("dataSource".equals(value)) {
 					for (Iterator iterator = bean.elementIterator(); iterator
 							.hasNext();) {

@@ -28,15 +28,15 @@ public class WeekManagerImpl implements WeekManager{
 		String sql = "select week_id from t_week where plan_id=" + plan_id + " and weekTime='" + weektime + "'" ;
 		int result = template.executeSql(sql);
 		if(result == 1){
-			logger.info("µ±Ç°weekÒÑ¾­´æÔÚ,²»ĞèÒª´´½¨");
+			logger.info("å½“å‰weekå·²ç»å­˜åœ¨,ä¸éœ€è¦åˆ›å»º");
 		}else {
-			logger.debug("µ±Ç°week²»´æÔÚ£¬ĞèÒª´´½¨");
-			//´´½¨Ò»¸öweek
+			logger.debug("å½“å‰weekä¸å­˜åœ¨ï¼Œéœ€è¦åˆ›å»º");
+			//åˆ›å»ºä¸€ä¸ªweek
 			Week week = new Week();
 			week.setPlan_id(plan_id);
 			week.setWeekTime(weektime);
 			this.addWeek(week);
-			logger.info("´´½¨plan_idÎª" + plan_id + "µÄweek!");
+			logger.info("åˆ›å»ºplan_idä¸º" + plan_id + "çš„week!");
 		}
 	}
 
@@ -50,12 +50,12 @@ public class WeekManagerImpl implements WeekManager{
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		current.set(Calendar.DAY_OF_WEEK, 2);//ÉèÎªÖÜÒ»
+		current.set(Calendar.DAY_OF_WEEK, 2);//è®¾ä¸ºå‘¨ä¸€
 		String day1 = format.format(current.getTime());
-		current.set(Calendar.DAY_OF_WEEK, 7);	//ÖÜÁù
-		current.set(Calendar.DAY_OF_MONTH, current.get(Calendar.DAY_OF_MONTH)+1); // ÖÜÈÕ
+		current.set(Calendar.DAY_OF_WEEK, 7);	//å‘¨å…­
+		current.set(Calendar.DAY_OF_MONTH, current.get(Calendar.DAY_OF_MONTH)+1); // å‘¨æ—¥
 		String day2 = format.format(current.getTime());
-		logger.info("ËùÊôÈÕÆÚ:" + day1 + "-" + day2);
+		logger.info("æ‰€å±æ—¥æœŸ:" + day1 + "-" + day2);
 		return day1 + "-" + day2;
 	}
 

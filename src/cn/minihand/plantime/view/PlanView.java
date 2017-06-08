@@ -30,14 +30,14 @@ import cn.minihand.plantime.util.SendMail;
 public class PlanView extends WindowAdapter implements Runnable, ActionListener {
 	
 	private Logger logger = Logger.getLogger(PlanView.class);
-	public int leftTime = 0; // ĞèÒªÖ´ĞĞµÄÊ±¼ä
-	public boolean isRun = false; // ÅĞ¶ÏÊÇ·ñÖ´ĞĞ
-	public String leftTimeValue = null; // ÏÔÊ¾¼Æ»®Ê£ÓàÊ±¼äµÄstring
-	public String planName = null;	//¼Æ»®Ãû³Æ
-	private String buttonName = "¿ªÊ¼";	//¼ÆÊ±°´Å¥Ãû³Æ£¬Ä¬ÈÏÎª¿ªÊ¼
+	public int leftTime = 0; // éœ€è¦æ‰§è¡Œçš„æ—¶é—´
+	public boolean isRun = false; // åˆ¤æ–­æ˜¯å¦æ‰§è¡Œ
+	public String leftTimeValue = null; // æ˜¾ç¤ºè®¡åˆ’å‰©ä½™æ—¶é—´çš„string
+	public String planName = null;	//è®¡åˆ’åç§°
+	private String buttonName = "å¼€å§‹";	//è®¡æ—¶æŒ‰é’®åç§°ï¼Œé»˜è®¤ä¸ºå¼€å§‹
 	private JButton control;
-	private JLabel leftTimeL ;	//ÏÔÊ¾Ê£ÓàÊ±¼ä
-	private Thread time;	//µ¹¼ÆÊ±Ïß³Ì
+	private JLabel leftTimeL ;	//æ˜¾ç¤ºå‰©ä½™æ—¶é—´
+	private Thread time;	//å€’è®¡æ—¶çº¿ç¨‹
 	private JPanel panel;
 	private Plan plan;
 	private Time myTime;
@@ -50,50 +50,50 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 		weekManager = new WeekManagerImpl();
 		this.plan = plan;
 		this.planName = plan.getPlanName();	
-		timeManager.validatePlanTime(plan.getPlan_id()); //¼ìÑéÊÇ·ñÊÇµ±ÌìµÄÈÎÎñ£¬×òÌìµÄÈÎÎñÊ±¼äÔòÖØÖÃÊ±¼ä
-		this.myTime = timeManager.findTime(plan.getPlan_id()); //¸ù¾İ¼Æ»®ID»ñÈ¡TimeÀà
+		timeManager.validatePlanTime(plan.getPlan_id()); //æ£€éªŒæ˜¯å¦æ˜¯å½“å¤©çš„ä»»åŠ¡ï¼Œæ˜¨å¤©çš„ä»»åŠ¡æ—¶é—´åˆ™é‡ç½®æ—¶é—´
+		this.myTime = timeManager.findTime(plan.getPlan_id()); //æ ¹æ®è®¡åˆ’IDè·å–Timeç±»
 		
-		int dayTime = myTime.getDayCompleteTime(); //»ñÈ¡µ±ÌìÒÑÖ´ĞĞÊ±¼ä
-		if(dayTime < 0) dayTime = 0;	//Èç¹û±¾ÈÕÖ´ĞĞÊ±¼äÎª¸ºÊı£¬Ôòµ÷Îª0
-		logger.info("±¾ÈÕÖ´ĞĞÊ±¼äÎª" + dayTime/60 + "·ÖÖÓ");
-		//ÅĞ¶ÏÊÇ·ñÖÜÄ©»ò¼Ó°à
+		int dayTime = myTime.getDayCompleteTime(); //è·å–å½“å¤©å·²æ‰§è¡Œæ—¶é—´
+		if(dayTime < 0) dayTime = 0;	//å¦‚æœæœ¬æ—¥æ‰§è¡Œæ—¶é—´ä¸ºè´Ÿæ•°ï¼Œåˆ™è°ƒä¸º0
+		logger.info("æœ¬æ—¥æ‰§è¡Œæ—¶é—´ä¸º" + dayTime/60 + "åˆ†é’Ÿ");
+		//åˆ¤æ–­æ˜¯å¦å‘¨æœ«æˆ–åŠ ç­
 		Calendar current = new GregorianCalendar();
 		int weekend = current.get(Calendar.DAY_OF_WEEK);
-		if(weekend!=1 && weekend!=7){//²»ÊÇÖÜÄ©
-			if(isOverTime == true){ //¼Ó°à
+		if(weekend!=1 && weekend!=7){//ä¸æ˜¯å‘¨æœ«
+			if(isOverTime == true){ //åŠ ç­
 				tempPlanTime = plan.getOverPlanTime();
-				logger.info("¼Ó°à£¬'" + this.planName +"'¼Æ»®Ê±¼ä=" + tempPlanTime);
-			}else{ //²»¼Ó°à
+				logger.info("åŠ ç­ï¼Œ'" + this.planName +"'è®¡åˆ’æ—¶é—´=" + tempPlanTime);
+			}else{ //ä¸åŠ ç­
 				tempPlanTime = plan.getPlanTime();
-				logger.info("²»¼Ó°à£¬'" + this.planName +"'¼Æ»®Ê±¼ä=" + tempPlanTime);
+				logger.info("ä¸åŠ ç­ï¼Œ'" + this.planName +"'è®¡åˆ’æ—¶é—´=" + tempPlanTime);
 			}
-		}else{//ÖÜÄ©
+		}else{//å‘¨æœ«
 			tempPlanTime = plan.getWeekendPlanTime();
-			logger.info("ÖÜÄ©£¬Ö´ĞĞÊ±¼äÎª£º" + tempPlanTime);
+			logger.info("å‘¨æœ«ï¼Œæ‰§è¡Œæ—¶é—´ä¸ºï¼š" + tempPlanTime);
 		}
-		if(dayTime != 0){	//²»ÊÇµÚÒ»´ÎÖ´ĞĞ
+		if(dayTime != 0){	//ä¸æ˜¯ç¬¬ä¸€æ¬¡æ‰§è¡Œ
 			this.tempPlanTime = this.leftTime = tempPlanTime - dayTime;
-			logger.info("²»ÊÇµÚÒ»´ÎÖ´ĞĞ£¬Ê£ÓàÊ±¼äÎª:" + leftTime/60 + "·ÖÖÓ");
-		}else{	//µÚÒ»´ÎÖ´ĞĞ
+			logger.info("ä¸æ˜¯ç¬¬ä¸€æ¬¡æ‰§è¡Œï¼Œå‰©ä½™æ—¶é—´ä¸º:" + leftTime/60 + "åˆ†é’Ÿ");
+		}else{	//ç¬¬ä¸€æ¬¡æ‰§è¡Œ
 			this.leftTime = tempPlanTime;
-			logger.info("±¾ÈÕµÚÒ»´ÎÖ´ĞĞ£¬Ê£ÓàÊ±¼äÎª£º" + leftTime/60 + "·ÖÖÓ");
+			logger.info("æœ¬æ—¥ç¬¬ä¸€æ¬¡æ‰§è¡Œï¼Œå‰©ä½™æ—¶é—´ä¸ºï¼š" + leftTime/60 + "åˆ†é’Ÿ");
 		}
 		
 		this.leftTimeValue = this.getLeftTime(leftTime);
 		panel = drawPanel();
 		panel.setName(String.valueOf(plan.getPlan_id()));
 		frame.add(panel);
-		frame.addWindowListener(this);	//Ìí¼Ó¹Ø±Õ¼àÌı£¬ÓÃÀ´¸üĞÂÊ±¼ä
+		frame.addWindowListener(this);	//æ·»åŠ å…³é—­ç›‘å¬ï¼Œç”¨æ¥æ›´æ–°æ—¶é—´
 		
 		return panel;
 	}
 
 	public JPanel drawPanel() {
 		panel = new JPanel();
-		// »ñµÃ planĞÅÏ¢
-		panel.setLayout(new FlowLayout()); // ¼ÓÉÏ²¼¾Ö
+		// è·å¾— planä¿¡æ¯
+		panel.setLayout(new FlowLayout()); // åŠ ä¸Šå¸ƒå±€
 
-		// ¼Æ»®Ãû³Æ
+		// è®¡åˆ’åç§°
 		JLabel planLabel = new JLabel();
 		planLabel.setText(planName);
 		planLabel.setForeground(Color.red);
@@ -108,17 +108,17 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 		panel.add(control);
 		
 		if(leftTime <= 0){
-			leftTimeL.setText("Ê£ÓàÊ±¼ä£ºÈÎÎñÒÑ¾­Íê³É£¡");
+			leftTimeL.setText("å‰©ä½™æ—¶é—´ï¼šä»»åŠ¡å·²ç»å®Œæˆï¼");
 			panel.remove(control);
 		}else{
-			leftTimeL.setText("Ê£ÓàÊ±¼ä£º" + formatLeftTime());
+			leftTimeL.setText("å‰©ä½™æ—¶é—´ï¼š" + formatLeftTime());
 		}
 		
 		return panel;
 	}
 	
 	/*
-	 * ¸ù¾İÈÎÎñ¼Æ»®µÄ×ÜÃëÊı
+	 * æ ¹æ®ä»»åŠ¡è®¡åˆ’çš„æ€»ç§’æ•°
 	 */
 	public String getLeftTime(int seconds) {
 		
@@ -130,7 +130,7 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 	}
 
 	/*
-	 * Èç¹ûÊ±¼äÊÇ¸öÎ»µÄ£¬Ôò¼Ó0
+	 * å¦‚æœæ—¶é—´æ˜¯ä¸ªä½çš„ï¼Œåˆ™åŠ 0
 	 */
 	public String formatLeftTime(){
 		String[] times = leftTimeValue.split(":");
@@ -156,7 +156,7 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 		while (Thread.currentThread().getName().equals(planName) && isRun) {
 			
 			leftTimeValue = getLeftTime(leftTime);
-			leftTimeL.setText("Ê£ÓàÊ±¼ä£º" + formatLeftTime());
+			leftTimeL.setText("å‰©ä½™æ—¶é—´ï¼š" + formatLeftTime());
 			leftTime--;
 			try {
 				Thread.sleep(1000);
@@ -164,35 +164,35 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 				e.printStackTrace();
 			}
 			if (leftTime <= 0) {
-				//¸üĞÂÊ±¼ä
+				//æ›´æ–°æ—¶é—´
 				int updateTime = this.tempPlanTime-leftTime-tempTime;
 				logger.info("updateTime = tempPlanTime-leftTime-tempTime --->" + updateTime + "=" + tempPlanTime + "-" + leftTime + "-" + tempTime);
 				if(updateTime != 0){
-					logger.info(this.planName + ",±¾´ÎÍ¨¹ıÍê³ÉÈÎÎñĞÂÔö" + updateTime/60 + "·ÖÖÓ" + (updateTime-(updateTime/60)) + "Ãë");
+					logger.info(this.planName + ",æœ¬æ¬¡é€šè¿‡å®Œæˆä»»åŠ¡æ–°å¢" + updateTime/60 + "åˆ†é’Ÿ" + (updateTime-(updateTime/60)) + "ç§’");
 					timeManager.updateTime(myTime, updateTime);
 					tempTime = tempPlanTime-leftTime;
 				}
 				
-				//·¢ËÍÓÊ¼ş
+				//å‘é€é‚®ä»¶
 				SendMail send = new SendMail();
-				int res = send.send(this.planName + "ÒÑ¾­Íê³ÉÈÎÎñ£¡");
+				int res = send.send(this.planName + "å·²ç»å®Œæˆä»»åŠ¡ï¼");
 				if(res != 1){
-					logger.info(plan.getPlanName() + "ÓÊ¼ş·¢ËÍÊ§°Ü£¬¼ÌĞø·¢ËÍ");
-					res = send.send(this.planName + "ÒÑ¾­Íê³ÉÈÎÎñ£¡");
+					logger.info(plan.getPlanName() + "é‚®ä»¶å‘é€å¤±è´¥ï¼Œç»§ç»­å‘é€");
+					res = send.send(this.planName + "å·²ç»å®Œæˆä»»åŠ¡ï¼");
 				}
 				
-				leftTimeL.setText("Ê£ÓàÊ±¼ä£ºÈÎÎñÒÑ¾­Íê³É£¡");
+				leftTimeL.setText("å‰©ä½™æ—¶é—´ï¼šä»»åŠ¡å·²ç»å®Œæˆï¼");
 				panel.remove(control);
 				panel.repaint();
 				isRun = false;
 				
-				weekManager.validateWeek(plan.getPlan_id());	//ÑéÖ¤weekÊÇ·ñ´´½¨
+				weekManager.validateWeek(plan.getPlan_id());	//éªŒè¯weekæ˜¯å¦åˆ›å»º
 				
-				weekManager.updateWeek(plan.getPlan_id());	//¸üĞÂweek±í£¬¸ÃÌìµÄ´ËÈÎÎñÎªÒÑ¾­Íê³É
+				weekManager.updateWeek(plan.getPlan_id());	//æ›´æ–°weekè¡¨ï¼Œè¯¥å¤©çš„æ­¤ä»»åŠ¡ä¸ºå·²ç»å®Œæˆ
 				
 				JOptionPane pane = new JOptionPane();
 				pane.setLocation(500,200);
-				pane.showMessageDialog(panel, plan.getPlanName() + "ÈÎÎñÒÑ¾­Íê³É£¡");
+				pane.showMessageDialog(panel, plan.getPlanName() + "ä»»åŠ¡å·²ç»å®Œæˆï¼");
 				
 				Thread.currentThread().interrupt();
 			}
@@ -203,20 +203,20 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == control) {
 			time = new Thread(this, planName);
-			if ("¿ªÊ¼".equals(buttonName)) {
+			if ("å¼€å§‹".equals(buttonName)) {
 				isRun = true;
-				buttonName = "ÔİÍ£";
+				buttonName = "æš‚åœ";
 				control.setText(buttonName);
 				time.start();
 			} else {
-				buttonName = "¿ªÊ¼";
+				buttonName = "å¼€å§‹";
 				control.setText(buttonName);
 				isRun = false;
-				//¸üĞÂÊ±¼ä
+				//æ›´æ–°æ—¶é—´
 				int updateTime = tempPlanTime-leftTime-tempTime;
 				logger.info("updateTime = tempPlanTime-leftTime-tempTime --->" + updateTime + "=" + tempPlanTime + "-" + leftTime + "-" + tempTime);
 				if(updateTime != 0){
-					logger.info(this.planName + ",±¾´ÎÍ¨¹ıÔİÍ£ĞÂÔö" + updateTime/60 + "·ÖÖÓ" + (updateTime-(updateTime/60)) + "Ãë");
+					logger.info(this.planName + ",æœ¬æ¬¡é€šè¿‡æš‚åœæ–°å¢" + updateTime/60 + "åˆ†é’Ÿ" + (updateTime-(updateTime/60)) + "ç§’");
 					timeManager.updateTime(myTime, updateTime);
 					tempTime = tempPlanTime-leftTime;
 					System.out.println(tempTime);
@@ -226,11 +226,11 @@ public class PlanView extends WindowAdapter implements Runnable, ActionListener 
 	}
 
 	public void windowClosing(WindowEvent e) {
-		//¸üĞÂÊ±¼ä
+		//æ›´æ–°æ—¶é—´
 		int updateTime = tempPlanTime-leftTime-tempTime;
 		logger.info("updateTime = tempPlanTime-leftTime-tempTime --->" + updateTime + "=" + tempPlanTime + "-" + leftTime + "-" + tempTime);
 		if(updateTime != 0){
-			logger.info(this.planName + ",±¾´ÎÍ¨¹ı¹Ø±Õ´°¿ÚĞÂÔö" + updateTime/60 + "·ÖÖÓ" + (updateTime-(updateTime/60)) + "Ãë");
+			logger.info(this.planName + ",æœ¬æ¬¡é€šè¿‡å…³é—­çª—å£æ–°å¢" + updateTime/60 + "åˆ†é’Ÿ" + (updateTime-(updateTime/60)) + "ç§’");
 			timeManager.updateTime(myTime, updateTime);
 		}
 	}

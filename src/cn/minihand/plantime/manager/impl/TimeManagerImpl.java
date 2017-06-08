@@ -28,7 +28,7 @@ public class TimeManagerImpl implements TimeManager {
 		return (Time) template.findByField(new Time(), "plan_id", plan_id);
 	}
 
-	// ¸úĞÂtime±í£¬ÀÛ¼ÓËùÓĞÊ±¼ä,updateTimeÎªĞÂÔö¼ÓµÄÃèÊö
+	// è·Ÿæ–°timeè¡¨ï¼Œç´¯åŠ æ‰€æœ‰æ—¶é—´,updateTimeä¸ºæ–°å¢åŠ çš„æè¿°
 	public void updateTime(Time time, int updateTime) {
 		time.setDayCompleteTime(time.getDayCompleteTime() + updateTime);
 		time.setWeekCompleteTime(time.getWeekCompleteTime() + updateTime);
@@ -41,44 +41,44 @@ public class TimeManagerImpl implements TimeManager {
 	}
 
 	/**
-	 * ½«ÉÏ´Î¸üĞÂÊ±¼äºÍÍê³ÉÇé¿ö½øĞĞ±È¶Ô£¬Èç¹ûÊÇ×òÌìÍê³ÉµÄ£¬½ñÌìµÄdayCompleteTimeÖØÖÃÎª0
+	 * å°†ä¸Šæ¬¡æ›´æ–°æ—¶é—´å’Œå®Œæˆæƒ…å†µè¿›è¡Œæ¯”å¯¹ï¼Œå¦‚æœæ˜¯æ˜¨å¤©å®Œæˆçš„ï¼Œä»Šå¤©çš„dayCompleteTimeé‡ç½®ä¸º0
 	 */
 	public void validatePlanTime(int plan_id) {
 		Time time = findTime(plan_id);
 		int dayTime = time.getDayCompleteTime();
 		Date lastUpdateTime = time.getLastUpdateTime();
 		
-		//lastUpdateTimeµÄCalendarÊµÀı
+		//lastUpdateTimeçš„Calendarå®ä¾‹
 		if(lastUpdateTime != null){
 			Calendar last = Calendar.getInstance();
 			last.clear();
 			last.setTime(lastUpdateTime);
 		
-			//µ±Ç°µÄCalendarÊµÀı
+			//å½“å‰çš„Calendarå®ä¾‹
 			Calendar now = Calendar.getInstance();
 			now.clear();
 			now.setTime(new Date());
 			
-			//ÅĞ¶ÏÊÇ²»ÊÇĞÂµÄÒ»Ìì,³¬¹ıÁè³¿3µãÎªĞÂµÄÒ»Ìì
+			//åˆ¤æ–­æ˜¯ä¸æ˜¯æ–°çš„ä¸€å¤©,è¶…è¿‡å‡Œæ™¨3ç‚¹ä¸ºæ–°çš„ä¸€å¤©
 			if((now.get(Calendar.DAY_OF_YEAR) != last.get(Calendar.DAY_OF_YEAR)) || (now.get(Calendar.DAY_OF_YEAR) == last.get(Calendar.DAY_OF_YEAR) && last.get(Calendar.HOUR_OF_DAY) <= 3)){
 				time.setDayCompleteTime(0);
-				logger.info("ĞÂµÄÒ»Ìì£¬" + plan_id + "Ê±¼äÖØÖÃ");
+				logger.info("æ–°çš„ä¸€å¤©ï¼Œ" + plan_id + "æ—¶é—´é‡ç½®");
 				
 				this.updateTime(time);
 				
-				//ÅĞ¶ÏÊÇ²»ÊÇĞÂµÄĞÇÆÚ,¼´ÅĞ¶ÏÊÇ²»ÊÇĞÇÆÚÒ»
+				//åˆ¤æ–­æ˜¯ä¸æ˜¯æ–°çš„æ˜ŸæœŸ,å³åˆ¤æ–­æ˜¯ä¸æ˜¯æ˜ŸæœŸä¸€
 				if(now.get(Calendar.DAY_OF_WEEK) == 2){
 					time.setWeekCompleteTime(0);
-					logger.info("ĞÂµÄÒ»ÖÜ£¬" + plan_id + " Ê±¼äÖØÖÃ");
+					logger.info("æ–°çš„ä¸€å‘¨ï¼Œ" + plan_id + " æ—¶é—´é‡ç½®");
 				}
-				//ÅĞ¶ÏÊÇ²»ÊÇĞÂµÄÔÂ·İ£¬ÅĞ¶ÏÊÇ²»ÊÇÒ»ºÅ
+				//åˆ¤æ–­æ˜¯ä¸æ˜¯æ–°çš„æœˆä»½ï¼Œåˆ¤æ–­æ˜¯ä¸æ˜¯ä¸€å·
 				if(now.get(Calendar.DAY_OF_MONTH) == 1){
 					time.setMonthCompleteTime(0);
-					logger.info("ĞÂµÄÒ»ÔÂ£¬" + plan_id + " Ê±¼äÖØÖÃ");
-					//ÅĞ¶ÏÊÇ²»ÊÇĞÂµÄÄê·İ,ÊÇ²»ÊÇÒ»ÔÂ·İ
+					logger.info("æ–°çš„ä¸€æœˆï¼Œ" + plan_id + " æ—¶é—´é‡ç½®");
+					//åˆ¤æ–­æ˜¯ä¸æ˜¯æ–°çš„å¹´ä»½,æ˜¯ä¸æ˜¯ä¸€æœˆä»½
 					if(now.get(Calendar.MONTH) == 1){
 						time.setYearCompleteTime(0);
-						logger.info("ĞÂµÄÒ»Äê£¬" + plan_id + " Ê±¼äÖØÖÃ");
+						logger.info("æ–°çš„ä¸€å¹´ï¼Œ" + plan_id + " æ—¶é—´é‡ç½®");
 					}
 				}
 			}
@@ -106,7 +106,7 @@ public class TimeManagerImpl implements TimeManager {
 	}
 	
 	/**
-	 * »ñÈ¡ÈÎÎñ¼ÇÂ¼Êı
+	 * è·å–ä»»åŠ¡è®°å½•æ•°
 	 * @return
 	 */
 	public int[] getTaskNum(){
@@ -128,9 +128,9 @@ public class TimeManagerImpl implements TimeManager {
 				boolean isCurrentDay = isCurrentDay(dayDir.getName());
 				for (File dayFile : dayDir.listFiles()) {
 					all ++;
-					if(isCurrentDay) days ++;//±¾ÈÕ
-					if(isCurrentWeek) weeks ++;//±¾ÖÜ
-					if(isCurrentMonth) months ++;//ÊÇ±¾ÔÂ£¬±¾ÔÂ+1
+					if(isCurrentDay) days ++;//æœ¬æ—¥
+					if(isCurrentWeek) weeks ++;//æœ¬å‘¨
+					if(isCurrentMonth) months ++;//æ˜¯æœ¬æœˆï¼Œæœ¬æœˆ+1
 				}
 			}
 		}
@@ -152,7 +152,7 @@ public class TimeManagerImpl implements TimeManager {
 	}
 	
 	/**
-	 * ÅĞ¶ÏÖ¸¶¨ÈÕÆÚÊÇ·ñÊÇ±¾ÖÜ
+	 * åˆ¤æ–­æŒ‡å®šæ—¥æœŸæ˜¯å¦æ˜¯æœ¬å‘¨
 	 * @param dayStr
 	 * @return
 	 */
@@ -175,7 +175,7 @@ public class TimeManagerImpl implements TimeManager {
 	}
 	
 	/**
-	 * ÅĞ¶ÏÖ¸¶¨ÈÕÆÚÊÇ·ñÊÇ±¾ÔÂ·İ
+	 * åˆ¤æ–­æŒ‡å®šæ—¥æœŸæ˜¯å¦æ˜¯æœ¬æœˆä»½
 	 * @param monthStr
 	 * @return
 	 */
@@ -184,7 +184,7 @@ public class TimeManagerImpl implements TimeManager {
 		try {
 			Date monDate = format.parse(monthStr);
 			Calendar cal = Calendar.getInstance();
-			int currentMonth = cal.get(Calendar.MONTH);//µ±Ç°ÔÂ·İ
+			int currentMonth = cal.get(Calendar.MONTH);//å½“å‰æœˆä»½
 			cal.setTime(monDate);
 			int specMonth = cal.get(Calendar.MONTH);
 			if(currentMonth == specMonth) return true;
@@ -195,13 +195,13 @@ public class TimeManagerImpl implements TimeManager {
 	}
 	
 	/**
-	 * °Ñ·¬ÇÑÊ±¼ä×ª»»³ÉĞ¡Ê±
+	 * æŠŠç•ªèŒ„æ—¶é—´è½¬æ¢æˆå°æ—¶
 	 * @param count
 	 * @return
 	 */
 	public String truncCountToHour(int count){
-		String hour_unit = "Ğ¡Ê±";
-		String min_unit = "·ÖÖÓ";
+		String hour_unit = "å°æ—¶";
+		String min_unit = "åˆ†é’Ÿ";
 		if(count == 0) return count + hour_unit;
 		int minutes = 25 * count;
 		if(minutes < 60) return minutes + min_unit;

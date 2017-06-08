@@ -91,7 +91,7 @@ public class MainView implements ActionListener, KeyListener {
 
 		load();
 		
-//		frame.setFocusableWindowState(false);//²»ÓÃÃ¿´Î¶¼»ñÈ¡µ±Ç°´°¿ÚµÄ½¹µã
+//		frame.setFocusableWindowState(false);//ä¸ç”¨æ¯æ¬¡éƒ½è·å–å½“å‰çª—å£çš„ç„¦ç‚¹
 		frame.setVisible(true);
 		
 //		while(true){
@@ -107,10 +107,10 @@ public class MainView implements ActionListener, KeyListener {
 	
 	public void load(){
 		this.panel = new JPanel();
-		JLabel text_tip = new JLabel("×Ü¼Æ£º", SwingUtilities.LEFT);
-		JLabel today_tip = new JLabel("½ñÈÕ£º", SwingUtilities.LEFT);
-		JLabel week_tip = new JLabel("±¾ÖÜ£º", SwingUtilities.LEFT);
-		JLabel month_tip = new JLabel("±¾ÔÂ£º", SwingUtilities.LEFT);
+		JLabel text_tip = new JLabel("æ€»è®¡ï¼š", SwingUtilities.LEFT);
+		JLabel today_tip = new JLabel("ä»Šæ—¥ï¼š", SwingUtilities.LEFT);
+		JLabel week_tip = new JLabel("æœ¬å‘¨ï¼š", SwingUtilities.LEFT);
+		JLabel month_tip = new JLabel("æœ¬æœˆï¼š", SwingUtilities.LEFT);
 		
 		panel.setLayout(new GridLayout(5,1));
 		panel.add(text_tip);
@@ -137,7 +137,7 @@ public class MainView implements ActionListener, KeyListener {
 	}
 
 	public String getCurrentTime(){
-		DateFormat format = new SimpleDateFormat("HHµãmm·ÖssÃë");
+		DateFormat format = new SimpleDateFormat("HHç‚¹mmåˆ†ssç§’");
 		return format.format(new Date());
 	}
 	
@@ -160,7 +160,7 @@ public class MainView implements ActionListener, KeyListener {
 //			}
 		}
 		if(e.getSource() == expItem){
-			JOptionPane.showMessageDialog(frame, "µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
+			JOptionPane.showMessageDialog(frame, "å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
 			
 		}
 		
@@ -194,8 +194,8 @@ public class MainView implements ActionListener, KeyListener {
 		private JPanel timePanel;
 		private JLabel minutes;
 		private JLabel timeField;
-		private int count;//ÓÃÓÚ¼ÆÊı£¬2¸ö25·ÖÖÓÒªÆğÀ´»î¶¯»î¶¯
-		private String preTime;//Ç°Ò»¸ö¼ÇÂ¼µÄÊ±¼ä
+		private int count;//ç”¨äºè®¡æ•°ï¼Œ2ä¸ª25åˆ†é’Ÿè¦èµ·æ¥æ´»åŠ¨æ´»åŠ¨
+		private String preTime;//å‰ä¸€ä¸ªè®°å½•çš„æ—¶é—´
 		private JMenuItem startItem,expItem;//TomatoTime Menu
 //		private JMenuItem aboutMe, sync;//Help Menu
 
@@ -244,13 +244,13 @@ public class MainView implements ActionListener, KeyListener {
 
 			int seconds = 25 * 60;
 //			int seconds = 3;
-			this.timeField = new JLabel("¿ªÊ¼¼ÆÊ±");
+			this.timeField = new JLabel("å¼€å§‹è®¡æ—¶");
 			this.timePanel.add(this.timeField);
 			timeFrame.add(this.timePanel);
-//			timeFrame.setFocusableWindowState(false);//²»ÓÃÃ¿´Î¶¼»ñÈ¡µ±Ç°´°¿ÚµÄ½¹µã
+//			timeFrame.setFocusableWindowState(false);//ä¸ç”¨æ¯æ¬¡éƒ½è·å–å½“å‰çª—å£çš„ç„¦ç‚¹
 			timeFrame.setVisible(true);
 			
-			String task_content = JOptionPane.showInputDialog("ÈÎÎñÄÚÈİ:", ExperienceManager.getLastContent());
+			String task_content = JOptionPane.showInputDialog("ä»»åŠ¡å†…å®¹:", ExperienceManager.getLastContent());
 			timeFrame.setTitle(task_content);
 			String beginTime = ExperienceManager.getCurrentTime();//add since v1.4.1
 			while (seconds != 0) {
@@ -261,9 +261,9 @@ public class MainView implements ActionListener, KeyListener {
 					secStr = "0" + sec;
 				}
 				if(min == 0){
-					timeField.setText(secStr + "Ãë(" + ExperienceManager.getTodayCount() + ")");
+					timeField.setText(secStr + "ç§’(" + ExperienceManager.getTodayCount() + ")");
 				}else {
-					timeField.setText(min + "·Ö" + secStr + "Ãë(" + ExperienceManager.getTodayCount() + ")");
+					timeField.setText(min + "åˆ†" + secStr + "ç§’(" + ExperienceManager.getTodayCount() + ")");
 				}
 				seconds--;
 				try {
@@ -279,12 +279,12 @@ public class MainView implements ActionListener, KeyListener {
 			format = new SimpleDateFormat("yyyyMMdd");
 			String dayDir = format.format(new Date());
 			String fileName = beginTime + "_" + endTime + "_" + task_content;
-			ExperienceManager.saveLastContent(task_content);//¼ÇÂ¼±¾´ÎµÄÈÎÎñÄÚÈİ
+			ExperienceManager.saveLastContent(task_content);//è®°å½•æœ¬æ¬¡çš„ä»»åŠ¡å†…å®¹
 			ExperienceManager.saveTimeToFile(monthDir, dayDir, fileName);
 			
 			/*
 			 * add 2013-08-27 15:16:21
-			 * Éı¼¶¾­Ñé¿ªÊ¼
+			 * å‡çº§ç»éªŒå¼€å§‹
 			 */
 			ExperienceManager.upgrade();
 
@@ -298,22 +298,22 @@ public class MainView implements ActionListener, KeyListener {
 			 * add since v1.4.1
 			 */
 			boolean isSend = SocketUtil.sendToServer(new String[]{monthDir, dayDir, fileName});
-			if(!isSend){//ÍøÂç²»Í¨³©£¬·Åµ½µÈ´ıÉÏ´«ÎÄ¼ş¼ĞupfileÏÂ
+			if(!isSend){//ç½‘ç»œä¸é€šç•…ï¼Œæ”¾åˆ°ç­‰å¾…ä¸Šä¼ æ–‡ä»¶å¤¹upfileä¸‹
 				logger.error(fileName + " send to server fail, backup to upfile...");
 				ExperienceManager.saveToUpFile(monthDir, dayDir, fileName);
 				
-			}else {//ÍøÂçÍ¨³©£¬½«ÀúÊ·µÄÊı¾İ´«µ½·şÎñ¶Ë
+			}else {//ç½‘ç»œé€šç•…ï¼Œå°†å†å²çš„æ•°æ®ä¼ åˆ°æœåŠ¡ç«¯
 				logger.info("send upfile to server......");
 				ExperienceManager.sendUpFileToServer();
 			}
 			
 			if(count == 2){
-				JOptionPane.showMessageDialog(timeFrame, "µÚ"+count+"¸ö·¬ÇÑÊ±¼äµ½ÁË¡­¡­½ñÈÕÒÑÍê³É" + ExperienceManager.getTodayCount() + "¸ö,Ç×£¬¸ÃºÈË®ÁË£¡µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
+				JOptionPane.showMessageDialog(timeFrame, "ç¬¬"+count+"ä¸ªç•ªèŒ„æ—¶é—´åˆ°äº†â€¦â€¦ä»Šæ—¥å·²å®Œæˆ" + ExperienceManager.getTodayCount() + "ä¸ª,äº²ï¼Œè¯¥å–æ°´äº†ï¼å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
 			}else if(count == 4){
-				JOptionPane.showMessageDialog(timeFrame, "µÚ"+count+"¸ö·¬ÇÑÊ±¼äµ½ÁË¡­¡­½ñÈÕÒÑÍê³É" + ExperienceManager.getTodayCount() + "¸ö,Ç×£¬¸ÃÆğÀ´»î¶¯»î¶¯ÁË£¡µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
-				count = 1;//ÖØÖÃcount
+				JOptionPane.showMessageDialog(timeFrame, "ç¬¬"+count+"ä¸ªç•ªèŒ„æ—¶é—´åˆ°äº†â€¦â€¦ä»Šæ—¥å·²å®Œæˆ" + ExperienceManager.getTodayCount() + "ä¸ª,äº²ï¼Œè¯¥èµ·æ¥æ´»åŠ¨æ´»åŠ¨äº†ï¼å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
+				count = 1;//é‡ç½®count
 			}else {
-				JOptionPane.showMessageDialog(timeFrame, "µÚ"+count+"¸ö·¬ÇÑÊ±¼äµ½ÁË¡­¡­½ñÈÕÒÑÍê³É" + ExperienceManager.getTodayCount() + "¸ö,µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
+				JOptionPane.showMessageDialog(timeFrame, "ç¬¬"+count+"ä¸ªç•ªèŒ„æ—¶é—´åˆ°äº†â€¦â€¦ä»Šæ—¥å·²å®Œæˆ" + ExperienceManager.getTodayCount() + "ä¸ª,å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
 			}
 			count ++;
 			updateCount();
@@ -351,7 +351,7 @@ public class MainView implements ActionListener, KeyListener {
 				long currentMillis = current.getTime();
 				long lastMillis = last.getTime();
 				
-				if(currentMillis > (lastMillis + 2*25*60*1000)){//³¬¹ı2¸ö·¬ÇÑÊ±¼ä,ÖØĞÂ¼ÆÊı²¢ÖØÖÃÊ±¼ä
+				if(currentMillis > (lastMillis + 2*25*60*1000)){//è¶…è¿‡2ä¸ªç•ªèŒ„æ—¶é—´,é‡æ–°è®¡æ•°å¹¶é‡ç½®æ—¶é—´
 					count = 1;
 					FileUtil.writeContentToFile(file, "1###" + currentTime);
 				}
@@ -364,7 +364,7 @@ public class MainView implements ActionListener, KeyListener {
 		
 		public void actionPerformed(ActionEvent e) {
 			if(e.getSource() == expItem){
-				JOptionPane.showMessageDialog(timeFrame, "µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
+				JOptionPane.showMessageDialog(timeFrame, "å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
 			}
 			
 			if(e.getSource() == sync){

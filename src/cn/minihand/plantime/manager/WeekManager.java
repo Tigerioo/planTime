@@ -6,7 +6,7 @@ public interface WeekManager {
 
 	public void validateWeek(int plan_id);
 
-	public String getWeekTime(String currentTime);	//¸ù¾İµ±Ç°ÈÕÆÚÀ´È¡µÃ±¾ÖÜÈÕÆÚ·¶Î§
+	public String getWeekTime(String currentTime);	//æ ¹æ®å½“å‰æ—¥æœŸæ¥å–å¾—æœ¬å‘¨æ—¥æœŸèŒƒå›´
 	
 	public void addWeek(Week week);
 	
@@ -14,5 +14,5 @@ public interface WeekManager {
 	
 	public Week findWeek(int plan_id);
 	
-	public void deleteAllPlans(); //É¾³ıËùÓĞÊı¾İ
+	public void deleteAllPlans(); //åˆ é™¤æ‰€æœ‰æ•°æ®
 }

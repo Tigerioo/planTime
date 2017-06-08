@@ -20,18 +20,18 @@ public class XmlUtil {
 	private Logger logger = Logger.getLogger(XmlUtil.class);
 	
 	/**
-	 * ¶ÁÈ¡XMLÎÄ¼ş
+	 * è¯»å–XMLæ–‡ä»¶
 	 * @param filePath
-	 * @return ·µ»ØÒ»¸öList
+	 * @return è¿”å›ä¸€ä¸ªList
 	 */
 	public List<Plan> readXml(String filePath){
 		List<Plan> contents = new ArrayList<Plan>();
 		Plan plan = null;
 		
 		Document document = this.getDocumentByFileName(filePath);
-		Element root = document.getRootElement(); //¸ùÄ¿Â¼
+		Element root = document.getRootElement(); //æ ¹ç›®å½•
 		
-		//±éÀúplanÄ¿Â¼
+		//éå†planç›®å½•
 		for (Iterator iterator = root.elementIterator(); iterator.hasNext();) { 
 			plan = new Plan();
 			Element element = (Element)iterator.next();

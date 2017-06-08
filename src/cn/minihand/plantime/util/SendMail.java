@@ -14,56 +14,56 @@ import javax.mail.internet.MimeMessage;
 import org.apache.log4j.Logger;
 
 /**
- * ·¢ËÍÆÕÍ¨ÓÊ¼ş£¬½ÓÊÜÆÕÍ¨ÓÊ¼ş ·¢ËÍ´øÓĞ¸½¼şµÄÓÊ¼ş£¬½ÓÊÕ´øÓĞ¸½¼şµÄÓÊ¼ş ·¢ËÍhtmlĞÎÊ½µÄÓÊ¼ş£¬½ÓÊÜhtmlĞÎÊ½µÄÓÊ¼ş ·¢ËÍ´øÓĞÍ¼Æ¬µÄÓÊ¼şµÈ×öÁËÒ»¸ö×Ü½á¡£
+ * å‘é€æ™®é€šé‚®ä»¶ï¼Œæ¥å—æ™®é€šé‚®ä»¶ å‘é€å¸¦æœ‰é™„ä»¶çš„é‚®ä»¶ï¼Œæ¥æ”¶å¸¦æœ‰é™„ä»¶çš„é‚®ä»¶ å‘é€htmlå½¢å¼çš„é‚®ä»¶ï¼Œæ¥å—htmlå½¢å¼çš„é‚®ä»¶ å‘é€å¸¦æœ‰å›¾ç‰‡çš„é‚®ä»¶ç­‰åšäº†ä¸€ä¸ªæ€»ç»“ã€‚
  */
 public class SendMail {
 	private Logger logger = Logger.getLogger(SendMail.class);
-	// ÓÊÏä·şÎñÆ÷
+	// é‚®ç®±æœåŠ¡å™¨
 	private String host = "smtp.qq.com";
-	// Õâ¸öÊÇÄãµÄÓÊÏäÓÃ»§Ãû
+	// è¿™ä¸ªæ˜¯ä½ çš„é‚®ç®±ç”¨æˆ·å
 	private String username = "274221276@qq.com";
-	// ÄãµÄÓÊÏäÃÜÂë
+	// ä½ çš„é‚®ç®±å¯†ç 
 	private String password = "linguoqiang27422";
 
 	private String mail_head_name = "this is head of this mail";
 
-	private String mail_head_value = "ÈÎÎñ¼Æ»®Íê³ÉÌáĞÑ";
+	private String mail_head_value = "ä»»åŠ¡è®¡åˆ’å®Œæˆæé†’";
 
 	private String mail_to = "15960163650@qq.com";
 
 	private String mail_from = "274221276@qq.com";
 
-	private String mail_subject = "ÈÎÎñÍê³ÉÌáĞÑÓÊ¼ş";
+	private String mail_subject = "ä»»åŠ¡å®Œæˆæé†’é‚®ä»¶";
 
-	private String personalName = "ÎÒµÄÓÊ¼ş";
+	private String personalName = "æˆ‘çš„é‚®ä»¶";
 
 	public SendMail() {
 	}
 
 	/**
-	 * ´Ë¶Î´úÂëÓÃÀ´·¢ËÍÆÕÍ¨µç×ÓÓÊ¼ş
+	 * æ­¤æ®µä»£ç ç”¨æ¥å‘é€æ™®é€šç”µå­é‚®ä»¶
 	 */
 	public int send(String mail_body){
 		int res = -1;
 		try {
-			Properties props = new Properties(); // »ñÈ¡ÏµÍ³»·¾³
-			Authenticator auth = new Email_Autherticator(); // ½øĞĞÓÊ¼ş·şÎñÆ÷ÓÃ»§ÈÏÖ¤
+			Properties props = new Properties(); // è·å–ç³»ç»Ÿç¯å¢ƒ
+			Authenticator auth = new Email_Autherticator(); // è¿›è¡Œé‚®ä»¶æœåŠ¡å™¨ç”¨æˆ·è®¤è¯
 			props.put("mail.smtp.host", host);
 			props.put("mail.smtp.auth", "true");
 			Session session = Session.getDefaultInstance(props, auth);
-			// ÉèÖÃsession,ºÍÓÊ¼ş·şÎñÆ÷½øĞĞÍ¨Ñ¶¡£
+			// è®¾ç½®session,å’Œé‚®ä»¶æœåŠ¡å™¨è¿›è¡Œé€šè®¯ã€‚
 			MimeMessage message = new MimeMessage(session);
-			// message.setContent("foobar, "application/x-foobar"); // ÉèÖÃÓÊ¼ş¸ñÊ½
-			message.setSubject(mail_subject); // ÉèÖÃÓÊ¼şÖ÷Ìâ
-			message.setText(mail_body); // ÉèÖÃÓÊ¼şÕıÎÄ
-			message.setHeader(mail_head_name, mail_head_value); // ÉèÖÃÓÊ¼ş±êÌâ
-			message.setSentDate(new Date()); // ÉèÖÃÓÊ¼ş·¢ËÍÈÕÆÚ
+			// message.setContent("foobar, "application/x-foobar"); // è®¾ç½®é‚®ä»¶æ ¼å¼
+			message.setSubject(mail_subject); // è®¾ç½®é‚®ä»¶ä¸»é¢˜
+			message.setText(mail_body); // è®¾ç½®é‚®ä»¶æ­£æ–‡
+			message.setHeader(mail_head_name, mail_head_value); // è®¾ç½®é‚®ä»¶æ ‡é¢˜
+			message.setSentDate(new Date()); // è®¾ç½®é‚®ä»¶å‘é€æ—¥æœŸ
 			Address address = new InternetAddress(mail_from, personalName);
-			message.setFrom(address); // ÉèÖÃÓÊ¼ş·¢ËÍÕßµÄµØÖ·
-			Address toAddress = new InternetAddress(mail_to); // ÉèÖÃÓÊ¼ş½ÓÊÕ·½µÄµØÖ·
+			message.setFrom(address); // è®¾ç½®é‚®ä»¶å‘é€è€…çš„åœ°å€
+			Address toAddress = new InternetAddress(mail_to); // è®¾ç½®é‚®ä»¶æ¥æ”¶æ–¹çš„åœ°å€
 			message.addRecipient(Message.RecipientType.TO, toAddress);
-			Transport.send(message); // ·¢ËÍÓÊ¼ş
-			logger.info("ÓÊ¼ş·¢ËÍ³É¹¦£¡");
+			Transport.send(message); // å‘é€é‚®ä»¶
+			logger.info("é‚®ä»¶å‘é€æˆåŠŸï¼");
 			res = 1;
 			return res;
 		} catch (Exception ex) {
@@ -73,7 +73,7 @@ public class SendMail {
 	}
 
 	/**
-	 * ÓÃÀ´½øĞĞ·şÎñÆ÷¶ÔÓÃ»§µÄÈÏÖ¤
+	 * ç”¨æ¥è¿›è¡ŒæœåŠ¡å™¨å¯¹ç”¨æˆ·çš„è®¤è¯
 	 */
 	public class Email_Autherticator extends Authenticator {
 		public Email_Autherticator() {
@@ -92,11 +92,11 @@ public class SendMail {
 	}
 
 	public static void main(String[] args) {
-		//·¢ËÍÓÊ¼ş
+		//å‘é€é‚®ä»¶
 		SendMail send = new SendMail();
-		int res = send.send("ÒÑ¾­Íê³ÉÈÎÎñ£¡");
+		int res = send.send("å·²ç»å®Œæˆä»»åŠ¡ï¼");
 		while(res != 1){
-			res = send.send("ÒÑ¾­Íê³ÉÈÎÎñ£¡");
+			res = send.send("å·²ç»å®Œæˆä»»åŠ¡ï¼");
 		}
 	}
 }

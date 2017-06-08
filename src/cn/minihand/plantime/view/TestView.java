@@ -31,8 +31,8 @@ public class TestView implements ActionListener, KeyListener {
 	private JPanel timePanel;
 	private JLabel minutes;
 	private JLabel timeField;
-	private int count;//ÓÃÓÚ¼ÆÊı£¬2¸ö25·ÖÖÓÒªÆğÀ´»î¶¯»î¶¯
-	private String preTime;//Ç°Ò»¸ö¼ÇÂ¼µÄÊ±¼ä
+	private int count;//ç”¨äºè®¡æ•°ï¼Œ2ä¸ª25åˆ†é’Ÿè¦èµ·æ¥æ´»åŠ¨æ´»åŠ¨
+	private String preTime;//å‰ä¸€ä¸ªè®°å½•çš„æ—¶é—´
 
 	public void lunchFrame() {
 		try {
@@ -59,10 +59,10 @@ public class TestView implements ActionListener, KeyListener {
 
 		int seconds = 25 * 60;
 //		int seconds = 3;
-		this.timeField = new JLabel("¿ªÊ¼¼ÆÊ±");
+		this.timeField = new JLabel("å¼€å§‹è®¡æ—¶");
 		this.timePanel.add(this.timeField);
 //		timeFrame.add(this.timePanel);
-//		timeFrame.setFocusableWindowState(false);//²»ÓÃÃ¿´Î¶¼»ñÈ¡µ±Ç°´°¿ÚµÄ½¹µã
+//		timeFrame.setFocusableWindowState(false);//ä¸ç”¨æ¯æ¬¡éƒ½è·å–å½“å‰çª—å£çš„ç„¦ç‚¹
 		
 		JDialog d = new JDialog();
 		d.add(timePanel);
@@ -76,9 +76,9 @@ public class TestView implements ActionListener, KeyListener {
 			}
 			
 			if(min == 0){
-				timeField.setText(secStr + "Ãë");
+				timeField.setText(secStr + "ç§’");
 			}else {
-				timeField.setText(min + "·Ö" + secStr + "Ãë");
+				timeField.setText(min + "åˆ†" + secStr + "ç§’");
 			}
 			
 			seconds--;
@@ -93,18 +93,18 @@ public class TestView implements ActionListener, KeyListener {
 		
 		/*
 		 * add 2013-08-27 15:16:21
-		 * Éı¼¶¾­Ñé¿ªÊ¼
+		 * å‡çº§ç»éªŒå¼€å§‹
 		 */
 		ExperienceManager.upgrade();
 		
 		
 		if(count == 2){
-			JOptionPane.showMessageDialog(timeFrame, "µÚ"+count+"¸ö·¬ÇÑÊ±¼äµ½ÁË¡­¡­Ç×£¬¸ÃºÈË®ÁË£¡µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
+			JOptionPane.showMessageDialog(timeFrame, "ç¬¬"+count+"ä¸ªç•ªèŒ„æ—¶é—´åˆ°äº†â€¦â€¦äº²ï¼Œè¯¥å–æ°´äº†ï¼å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
 		}else if(count == 4){
-			JOptionPane.showMessageDialog(timeFrame, "µÚ"+count+"¸ö·¬ÇÑÊ±¼äµ½ÁË¡­¡­Ç×£¬¸ÃÆğÀ´»î¶¯»î¶¯ÁË£¡µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
-			count = 1;//ÖØÖÃcount
+			JOptionPane.showMessageDialog(timeFrame, "ç¬¬"+count+"ä¸ªç•ªèŒ„æ—¶é—´åˆ°äº†â€¦â€¦äº²ï¼Œè¯¥èµ·æ¥æ´»åŠ¨æ´»åŠ¨äº†ï¼å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
+			count = 1;//é‡ç½®count
 		}else {
-			JOptionPane.showMessageDialog(timeFrame, "µÚ"+count+"¸ö·¬ÇÑÊ±¼äµ½ÁË¡­¡­µ±Ç°µÈ¼¶" + ExperienceManager.getCurrentLevel() + ", ¾­ÑéÖµ£º" + ExperienceManager.getCurrentExpInfo());
+			JOptionPane.showMessageDialog(timeFrame, "ç¬¬"+count+"ä¸ªç•ªèŒ„æ—¶é—´åˆ°äº†â€¦â€¦å½“å‰ç­‰çº§" + ExperienceManager.getCurrentLevel() + ", ç»éªŒå€¼ï¼š" + ExperienceManager.getCurrentExpInfo());
 		}
 		count ++;
 		updateCount();
@@ -146,7 +146,7 @@ public class TestView implements ActionListener, KeyListener {
 			long currentMillis = current.getTime();
 			long lastMillis = last.getTime();
 			
-			if(currentMillis > (lastMillis + 2*25*60*1000)){//³¬¹ı2¸ö·¬ÇÑÊ±¼ä,ÖØĞÂ¼ÆÊı²¢ÖØÖÃÊ±¼ä
+			if(currentMillis > (lastMillis + 2*25*60*1000)){//è¶…è¿‡2ä¸ªç•ªèŒ„æ—¶é—´,é‡æ–°è®¡æ•°å¹¶é‡ç½®æ—¶é—´
 				count = 1;
 				FileUtil.writeContentToFile(file, "1###" + currentTime);
 			}

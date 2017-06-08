@@ -16,7 +16,7 @@ public class Test implements Runnable{
 		c1.set(Calendar.MINUTE, minute);
 		
 		millis = c1.getTimeInMillis();
-		System.out.println("¹¹Ôì£º" + millis);
+		System.out.println("æž„é€ ï¼š" + millis);
 	}
 	
 	public void run(){
