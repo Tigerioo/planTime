@@ -1,0 +1,991 @@
+[INFO ] 2011-06-22 12:43:23,438 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-22 12:43:24,889 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-22 12:43:24,889 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-22 12:43:24,889 method:cn.minihand.plantime.view.MainView.init(MainView.java:86)
+总共加载6个计划
+[INFO ] 2011-06-22 12:43:24,953 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-22 12:43:25,218 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:61)
+新的一天，103时间重置
+[INFO ] 2011-06-22 12:43:25,218 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=103, dayCompleteTime=0, weekCompleteTime=2400, monthCompleteTime=2400, yearCompleteTime=2400, totalCompleteTime=2400, lastUpdateTime=to_date('2011-06-21 20:01:12','yyyy-mm-dd hh24:mi:ss') where Time_id=30
+[INFO ] 2011-06-22 12:43:25,296 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-22 12:43:25,312 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+本日执行时间为0分钟
+[INFO ] 2011-06-22 12:43:25,312 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:67)
+加班，'IT网站'计划时间=2400
+[INFO ] 2011-06-22 12:43:25,312 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:81)
+本日第一次执行，剩余时间为：40分钟
+[INFO ] 2011-06-22 12:43:25,312 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-22 12:43:25,592 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:61)
+新的一天，104时间重置
+[INFO ] 2011-06-22 12:43:25,592 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=104, dayCompleteTime=0, weekCompleteTime=3600, monthCompleteTime=3600, yearCompleteTime=3600, totalCompleteTime=3600, lastUpdateTime=to_date('2011-06-21 19:52:35','yyyy-mm-dd hh24:mi:ss') where Time_id=31
+[INFO ] 2011-06-22 12:43:25,592 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-22 12:43:25,592 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+本日执行时间为0分钟
+[INFO ] 2011-06-22 12:43:25,608 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:67)
+加班，'看书'计划时间=3600
+[INFO ] 2011-06-22 12:43:25,608 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:81)
+本日第一次执行，剩余时间为：60分钟
+[INFO ] 2011-06-22 12:43:25,624 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-22 12:43:26,014 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-22 12:43:26,014 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+本日执行时间为22分钟
+[INFO ] 2011-06-22 12:43:26,014 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:67)
+加班，'做项目'计划时间=3600
+[INFO ] 2011-06-22 12:43:26,014 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:78)
+不是第一次执行，剩余时间为:37分钟
+[INFO ] 2011-06-22 12:43:26,014 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-22 12:43:26,264 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:61)
+新的一天，106时间重置
+[INFO ] 2011-06-22 12:43:26,264 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=106, dayCompleteTime=0, weekCompleteTime=600, monthCompleteTime=600, yearCompleteTime=600, totalCompleteTime=600, lastUpdateTime=to_date('2011-06-21 20:08:56','yyyy-mm-dd hh24:mi:ss') where Time_id=33
+[INFO ] 2011-06-22 12:43:26,264 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-22 12:43:26,264 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+本日执行时间为0分钟
+[INFO ] 2011-06-22 12:43:26,264 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:67)
+加班，'聊天'计划时间=600
+[INFO ] 2011-06-22 12:43:26,280 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:81)
+本日第一次执行，剩余时间为：10分钟
+[INFO ] 2011-06-22 12:43:26,280 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-22 12:43:26,514 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-22 12:43:26,514 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+本日执行时间为0分钟
+[INFO ] 2011-06-22 12:43:26,514 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:67)
+加班，'英语相关'计划时间=1800
+[INFO ] 2011-06-22 12:43:26,514 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:81)
+本日第一次执行，剩余时间为：30分钟
+[INFO ] 2011-06-22 12:43:26,529 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-22 12:43:26,763 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:61)
+新的一天，102时间重置
+[INFO ] 2011-06-22 12:43:26,763 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=102, dayCompleteTime=0, weekCompleteTime=1200, monthCompleteTime=1200, yearCompleteTime=1200, totalCompleteTime=1200, lastUpdateTime=to_date('2011-06-21 19:52:35','yyyy-mm-dd hh24:mi:ss') where Time_id=29
+[INFO ] 2011-06-22 12:43:26,763 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-22 12:43:26,763 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+本日执行时间为0分钟
+[INFO ] 2011-06-22 12:43:26,763 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:67)
+加班，'网络资讯'计划时间=1200
+[INFO ] 2011-06-22 12:43:26,763 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:81)
+本日第一次执行，剩余时间为：20分钟
+[INFO ] 2011-06-22 12:43:34,548 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:242)
+updateTime = tempPlanTime-leftTime-tempTime --->0=2400-2400-0
+[INFO ] 2011-06-22 12:43:34,548 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:242)
+updateTime = tempPlanTime-leftTime-tempTime --->0=3600-3600-0
+[INFO ] 2011-06-22 12:43:34,548 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:242)
+updateTime = tempPlanTime-leftTime-tempTime --->0=2254-2254-0
+[INFO ] 2011-06-22 12:43:34,548 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:242)
+updateTime = tempPlanTime-leftTime-tempTime --->0=600-600-0
+[INFO ] 2011-06-22 12:43:34,548 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:242)
+updateTime = tempPlanTime-leftTime-tempTime --->0=1800-1800-0
+[INFO ] 2011-06-22 12:43:34,563 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:242)
+updateTime = tempPlanTime-leftTime-tempTime --->0=1200-1200-0
+[INFO ] 2011-06-22 22:39:37,694 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,712 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-22 22:39:37,712 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:39:37,713 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-22 22:39:37,713 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-22 22:39:37,713 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-22 22:39:37,714 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,714 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-22 22:39:37,714 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:39:37,714 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-22 22:39:37,715 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-22 22:39:37,715 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-22 22:39:37,715 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,715 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-22 22:39:37,716 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:39:37,716 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-22 22:39:37,716 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-22 22:39:37,717 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-22 22:39:37,717 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,717 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-22 22:39:37,717 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:39:37,718 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:39:37,718 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:39:37,718 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:39:37,719 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,719 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-22 22:39:37,719 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:39:37,719 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:39:37,720 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:39:37,720 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:39:37,720 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,720 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-22 22:39:37,722 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:39:37,722 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-22 22:39:37,722 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-22 22:39:37,722 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-22 22:39:37,723 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,723 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-22 22:39:37,723 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:39:37,723 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:39:37,724 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:39:37,724 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:39:37,724 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:39:37,724 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-22 22:39:37,724 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:39:37,725 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:39:37,725 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:39:37,725 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:39:37,725 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[ERROR] 2011-06-22 22:39:38,602 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_time数据失败!
+[ERROR] 2011-06-22 22:39:38,934 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_week数据失败!
+[ERROR] 2011-06-22 22:39:39,204 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:132)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,205 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[ERROR] 2011-06-22 22:39:39,206 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,207 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,208 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='英语相关'
+[ERROR] 2011-06-22 22:39:39,209 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,210 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[ERROR] 2011-06-22 22:39:39,212 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,212 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,212 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='网络资讯'
+[ERROR] 2011-06-22 22:39:39,216 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,218 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[ERROR] 2011-06-22 22:39:39,220 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,221 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,221 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='IT网站'
+[ERROR] 2011-06-22 22:39:39,222 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,223 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[ERROR] 2011-06-22 22:39:39,225 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,225 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,226 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='看书'
+[ERROR] 2011-06-22 22:39:39,227 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,228 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[ERROR] 2011-06-22 22:39:39,230 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,230 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,231 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='做项目'
+[ERROR] 2011-06-22 22:39:39,234 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,237 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[ERROR] 2011-06-22 22:39:39,239 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,240 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,240 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='聊天'
+[ERROR] 2011-06-22 22:39:39,242 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,244 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[ERROR] 2011-06-22 22:39:39,245 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,246 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,247 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='围棋'
+[ERROR] 2011-06-22 22:39:39,249 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,251 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[ERROR] 2011-06-22 22:39:39,265 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:39:39,266 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:39:39,266 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[ERROR] 2011-06-22 22:39:39,272 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,120 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,124 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-22 22:40:48,124 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:40:48,124 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-22 22:40:48,125 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-22 22:40:48,125 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-22 22:40:48,125 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,126 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-22 22:40:48,126 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:40:48,126 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-22 22:40:48,126 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-22 22:40:48,127 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-22 22:40:48,127 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,128 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-22 22:40:48,128 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:40:48,128 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-22 22:40:48,129 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-22 22:40:48,129 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-22 22:40:48,130 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,130 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-22 22:40:48,130 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:40:48,130 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:40:48,130 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:40:48,131 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:40:48,131 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,131 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-22 22:40:48,131 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:40:48,132 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:40:48,132 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:40:48,132 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:40:48,132 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,132 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-22 22:40:48,134 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:40:48,134 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-22 22:40:48,134 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-22 22:40:48,134 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-22 22:40:48,135 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,135 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-22 22:40:48,135 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:40:48,135 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:40:48,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:40:48,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:40:48,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:40:48,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-22 22:40:48,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:40:48,137 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:40:48,137 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:40:48,137 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:40:48,138 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-06-22 22:40:48,139 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[ERROR] 2011-06-22 22:40:48,634 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,635 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,636 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='英语相关'
+[ERROR] 2011-06-22 22:40:48,637 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,638 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[ERROR] 2011-06-22 22:40:48,640 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,641 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,641 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='网络资讯'
+[ERROR] 2011-06-22 22:40:48,642 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,643 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[ERROR] 2011-06-22 22:40:48,645 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,646 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,646 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='IT网站'
+[ERROR] 2011-06-22 22:40:48,647 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,648 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[ERROR] 2011-06-22 22:40:48,650 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,650 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,651 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='看书'
+[ERROR] 2011-06-22 22:40:48,652 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,653 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[ERROR] 2011-06-22 22:40:48,657 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,658 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,658 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='做项目'
+[ERROR] 2011-06-22 22:40:48,660 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,662 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[ERROR] 2011-06-22 22:40:48,664 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,665 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,665 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='聊天'
+[ERROR] 2011-06-22 22:40:48,666 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,667 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[ERROR] 2011-06-22 22:40:48,669 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,670 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,670 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='围棋'
+[ERROR] 2011-06-22 22:40:48,671 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,672 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[ERROR] 2011-06-22 22:40:48,673 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:40:48,674 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:40:48,674 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[ERROR] 2011-06-22 22:40:48,676 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:323)
+java.sql.SQLException: ORA-00942: 表或视图不存在
+
+[INFO ] 2011-06-22 22:43:16,677 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,682 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-22 22:43:16,682 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:16,683 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-22 22:43:16,683 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-22 22:43:16,683 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-22 22:43:16,683 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,684 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-22 22:43:16,684 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:16,684 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-22 22:43:16,685 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-22 22:43:16,685 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-22 22:43:16,685 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,685 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-22 22:43:16,686 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:16,686 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-22 22:43:16,686 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-22 22:43:16,686 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-22 22:43:16,687 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,687 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-22 22:43:16,687 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:16,688 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:43:16,688 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:16,688 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:43:16,688 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,689 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-22 22:43:16,689 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:16,689 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:43:16,689 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:16,690 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:43:16,690 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,690 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-22 22:43:16,691 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:16,692 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-22 22:43:16,692 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-22 22:43:16,692 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-22 22:43:16,692 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,693 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-22 22:43:16,693 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:43:16,693 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:43:16,694 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:16,694 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:43:16,694 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:16,694 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-22 22:43:16,694 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:43:16,695 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:43:16,695 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:16,695 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:43:16,695 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-06-22 22:43:16,696 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[ERROR] 2011-06-22 22:43:17,199 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,201 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,201 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='英语相关'
+[INFO ] 2011-06-22 22:43:17,208 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[ERROR] 2011-06-22 22:43:17,210 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,210 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,211 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='网络资讯'
+[INFO ] 2011-06-22 22:43:17,215 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[ERROR] 2011-06-22 22:43:17,216 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,217 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,217 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='IT网站'
+[INFO ] 2011-06-22 22:43:17,220 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[ERROR] 2011-06-22 22:43:17,222 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,223 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,223 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='看书'
+[INFO ] 2011-06-22 22:43:17,226 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[ERROR] 2011-06-22 22:43:17,229 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,230 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,230 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-06-22 22:43:17,235 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[ERROR] 2011-06-22 22:43:17,236 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,237 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,237 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='聊天'
+[INFO ] 2011-06-22 22:43:17,240 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[ERROR] 2011-06-22 22:43:17,242 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,243 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,243 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='围棋'
+[INFO ] 2011-06-22 22:43:17,246 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[ERROR] 2011-06-22 22:43:17,248 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:103)
+java.sql.SQLException: ORA-02289: 序列不存在
+
+[INFO ] 2011-06-22 22:43:17,249 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:17,250 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[INFO ] 2011-06-22 22:43:40,378 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,382 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-22 22:43:40,382 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:40,382 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-22 22:43:40,383 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-22 22:43:40,383 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-22 22:43:40,383 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,384 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-22 22:43:40,384 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:40,384 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-22 22:43:40,385 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-22 22:43:40,385 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-22 22:43:40,386 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,386 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-22 22:43:40,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:40,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-22 22:43:40,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-22 22:43:40,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-22 22:43:40,388 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,388 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-22 22:43:40,388 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:40,388 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:43:40,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:40,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:43:40,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-22 22:43:40,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:40,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:43:40,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:40,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:43:40,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,391 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-22 22:43:40,392 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:43:40,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-22 22:43:40,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-22 22:43:40,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-22 22:43:40,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,394 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-22 22:43:40,394 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:43:40,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:43:40,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:40,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:43:40,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:43:40,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-22 22:43:40,396 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:43:40,396 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:43:40,396 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:43:40,396 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:43:40,397 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-06-22 22:43:40,397 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[INFO ] 2011-06-22 22:43:40,936 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:40,936 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='英语相关'
+[INFO ] 2011-06-22 22:43:41,009 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[INFO ] 2011-06-22 22:43:41,012 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,013 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='网络资讯'
+[INFO ] 2011-06-22 22:43:41,017 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[INFO ] 2011-06-22 22:43:41,021 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,021 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='IT网站'
+[INFO ] 2011-06-22 22:43:41,025 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[INFO ] 2011-06-22 22:43:41,028 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,029 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='看书'
+[INFO ] 2011-06-22 22:43:41,035 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[INFO ] 2011-06-22 22:43:41,098 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,099 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-06-22 22:43:41,104 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[INFO ] 2011-06-22 22:43:41,107 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,108 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='聊天'
+[INFO ] 2011-06-22 22:43:41,112 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[INFO ] 2011-06-22 22:43:41,115 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,116 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='围棋'
+[INFO ] 2011-06-22 22:43:41,121 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[INFO ] 2011-06-22 22:43:41,125 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:43:41,126 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[INFO ] 2011-06-22 22:45:09,381 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,384 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-22 22:45:09,384 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:45:09,384 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-22 22:45:09,385 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-22 22:45:09,385 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-22 22:45:09,385 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,386 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-22 22:45:09,386 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:45:09,386 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-22 22:45:09,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-22 22:45:09,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-22 22:45:09,387 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,388 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-22 22:45:09,388 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:45:09,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-22 22:45:09,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-22 22:45:09,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-22 22:45:09,389 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-22 22:45:09,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:45:09,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:45:09,390 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:45:09,391 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:45:09,392 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,392 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-22 22:45:09,392 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:45:09,392 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-22 22:45:09,392 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:45:09,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-22 22:45:09,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,393 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-22 22:45:09,394 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-22 22:45:09,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-22 22:45:09,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-22 22:45:09,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-22 22:45:09,395 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,396 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-22 22:45:09,396 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:45:09,397 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:45:09,397 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:45:09,397 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:45:09,397 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-22 22:45:09,398 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-22 22:45:09,398 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-22 22:45:09,398 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-22 22:45:09,398 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-22 22:45:09,399 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-22 22:45:09,399 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[ERROR] 2011-06-22 22:45:10,014 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_time数据失败!
+[ERROR] 2011-06-22 22:45:10,338 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_week数据失败!
+[ERROR] 2011-06-22 22:45:10,579 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_plan数据失败!
+[INFO ] 2011-06-22 22:45:10,580 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[INFO ] 2011-06-22 22:45:10,583 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:10,583 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='英语相关'
+[INFO ] 2011-06-22 22:45:10,654 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,9,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:10,942 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:10,942 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[INFO ] 2011-06-22 22:45:10,945 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:10,946 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='网络资讯'
+[INFO ] 2011-06-22 22:45:10,949 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,10,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:10,982 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:10,983 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[INFO ] 2011-06-22 22:45:10,986 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:10,987 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='IT网站'
+[INFO ] 2011-06-22 22:45:10,990 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,11,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:10,994 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:10,994 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[INFO ] 2011-06-22 22:45:11,001 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,002 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='看书'
+[INFO ] 2011-06-22 22:45:11,007 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,12,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:11,010 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,011 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[INFO ] 2011-06-22 22:45:11,014 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,015 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-06-22 22:45:11,018 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,13,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:11,021 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,023 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[INFO ] 2011-06-22 22:45:11,026 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,027 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='聊天'
+[INFO ] 2011-06-22 22:45:11,031 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,14,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:11,035 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,036 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[INFO ] 2011-06-22 22:45:11,039 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,039 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='围棋'
+[INFO ] 2011-06-22 22:45:11,042 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,15,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:11,046 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,047 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[INFO ] 2011-06-22 22:45:11,050 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-22 22:45:11,051 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[INFO ] 2011-06-22 22:45:11,054 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,16,0,0,0,0,0)
+[INFO ] 2011-06-22 22:45:11,059 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!

@@ -1,0 +1,18 @@
+[INFO ] 2015-04-13 10:25:53,341 method:cn.minihand.plantime.view.MainView.actionPerformed(MainView.java:168)
+send upfile to server......
+[ERROR] 2015-04-13 10:25:53,346 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-04-13 10:25:53,361 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[INFO ] 2015-04-13 10:29:59,955 method:cn.minihand.plantime.view.MainView.actionPerformed(MainView.java:168)
+send upfile to server......
+[INFO ] 2015-04-13 10:29:59,960 method:cn.minihand.plantime.util.SocketUtil.isConnected(SocketUtil.java:37)
+socketaddress=115.28.93.210,port=8800
+[ERROR] 2015-04-13 10:29:59,968 method:cn.minihand.plantime.experience.ExperienceManager.sendUpFileToServer(ExperienceManager.java:269)
+can't not connect to server!
+[INFO ] 2015-04-13 10:30:03,954 method:cn.minihand.plantime.view.MainView.actionPerformed(MainView.java:168)
+send upfile to server......
+[INFO ] 2015-04-13 10:30:03,955 method:cn.minihand.plantime.util.SocketUtil.isConnected(SocketUtil.java:37)
+socketaddress=115.28.93.210,port=8800
+[ERROR] 2015-04-13 10:30:03,956 method:cn.minihand.plantime.experience.ExperienceManager.sendUpFileToServer(ExperienceManager.java:269)
+can't not connect to server!

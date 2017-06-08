@@ -1,0 +1,1382 @@
+[INFO ] 2011-06-20 11:50:12,179 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[ERROR] 2011-06-20 11:50:33,425 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:139)
+ qzf getConnection come here3.... e1.getMessage()=Cannot create PoolableConnectionFactory (Io 异常: The Network Adapter could not establish the connection)
+[ERROR] 2011-06-20 11:50:33,427 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:147)
+ qzf getConnection come here5 null
+[INFO ] 2011-06-20 11:51:19,899 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 11:51:20,971 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:62)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 11:54:00,203 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 11:55:21,949 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:62)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 12:00:50,405 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 12:00:51,087 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:63)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 12:01:57,083 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 12:01:57,716 method:cn.minihand.plantime.view.MainView.init(MainView.java:61)
+总共加载8个计划
+[INFO ] 2011-06-20 12:01:57,816 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:01:58,124 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:01:58,129 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:01:58,140 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=95, dayCompleteTime=0, weekCompleteTime=73, monthCompleteTime=73, yearCompleteTime=73, totalCompleteTime=85, lastUpdateTime=to_date('2011-06-19 13:46:42','yyyy-mm-dd hh24:mi:ss') where Time_id=22
+[INFO ] 2011-06-20 12:01:58,555 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:01:58,555 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=2369
+[INFO ] 2011-06-20 12:01:58,734 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:01:59,225 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:01:59,230 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:01:59,232 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=96, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:46:41','yyyy-mm-dd hh24:mi:ss') where Time_id=23
+[INFO ] 2011-06-20 12:01:59,344 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:01:59,346 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7191
+[INFO ] 2011-06-20 12:01:59,348 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:01:59,847 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:01:59,851 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:01:59,852 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=97, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=24
+[INFO ] 2011-06-20 12:01:59,902 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:01:59,903 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7191
+[INFO ] 2011-06-20 12:01:59,905 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:02:00,439 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:02:00,442 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:02:00,443 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=98, dayCompleteTime=0, weekCompleteTime=39, monthCompleteTime=39, yearCompleteTime=39, totalCompleteTime=47, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=25
+[INFO ] 2011-06-20 12:02:00,475 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:02:00,476 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=592
+[INFO ] 2011-06-20 12:02:00,478 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=99
+[INFO ] 2011-06-20 12:02:00,845 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=99
+[INFO ] 2011-06-20 12:02:00,849 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:02:00,850 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=99, dayCompleteTime=0, weekCompleteTime=40, monthCompleteTime=40, yearCompleteTime=40, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=26
+[INFO ] 2011-06-20 12:02:01,308 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:02:01,309 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=3592
+[INFO ] 2011-06-20 12:02:01,311 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=100
+[INFO ] 2011-06-20 12:02:01,606 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=100
+[INFO ] 2011-06-20 12:02:01,609 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:02:01,612 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=100, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=27
+[INFO ] 2011-06-20 12:02:01,804 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:02:01,805 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=3593
+[INFO ] 2011-06-20 12:02:01,807 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:02:02,155 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:02:02,158 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:02:02,159 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=93, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=20
+[INFO ] 2011-06-20 12:02:02,184 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:02:02,184 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1793
+[INFO ] 2011-06-20 12:02:02,186 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:02:02,490 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:02:02,497 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:02:02,497 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=94, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=21
+[INFO ] 2011-06-20 12:02:02,501 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:02:02,501 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1194
+[INFO ] 2011-06-20 12:44:53,304 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 12:45:16,800 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 12:45:17,643 method:cn.minihand.plantime.view.MainView.init(MainView.java:61)
+总共加载8个计划
+[INFO ] 2011-06-20 12:45:17,721 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:45:18,018 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:45:18,018 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:18,018 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=95, dayCompleteTime=0, weekCompleteTime=73, monthCompleteTime=73, yearCompleteTime=73, totalCompleteTime=85, lastUpdateTime=to_date('2011-06-19 13:46:42','yyyy-mm-dd hh24:mi:ss') where Time_id=22
+[INFO ] 2011-06-20 12:45:18,033 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:18,033 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=2400
+[INFO ] 2011-06-20 12:45:18,050 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:45:18,300 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:45:18,300 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:18,300 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=96, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:46:41','yyyy-mm-dd hh24:mi:ss') where Time_id=23
+[INFO ] 2011-06-20 12:45:18,300 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:18,300 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 12:45:18,300 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:45:18,549 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:45:18,549 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:18,549 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=97, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=24
+[INFO ] 2011-06-20 12:45:18,549 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:18,549 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 12:45:18,549 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:45:18,783 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:45:18,799 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:18,799 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=98, dayCompleteTime=0, weekCompleteTime=39, monthCompleteTime=39, yearCompleteTime=39, totalCompleteTime=47, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=25
+[INFO ] 2011-06-20 12:45:18,799 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:18,799 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=600
+[INFO ] 2011-06-20 12:45:18,814 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=99
+[INFO ] 2011-06-20 12:45:19,033 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=99
+[INFO ] 2011-06-20 12:45:19,048 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:19,048 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=99, dayCompleteTime=0, weekCompleteTime=40, monthCompleteTime=40, yearCompleteTime=40, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=26
+[INFO ] 2011-06-20 12:45:19,048 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:19,048 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=3600
+[INFO ] 2011-06-20 12:45:19,064 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=100
+[INFO ] 2011-06-20 12:45:19,299 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=100
+[INFO ] 2011-06-20 12:45:19,299 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:19,299 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=100, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=27
+[INFO ] 2011-06-20 12:45:19,315 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:19,315 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=3600
+[INFO ] 2011-06-20 12:45:19,315 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:45:19,549 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:45:19,549 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:19,549 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=93, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=20
+[INFO ] 2011-06-20 12:45:19,549 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:19,549 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1800
+[INFO ] 2011-06-20 12:45:19,549 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:45:19,783 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:45:19,783 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:19,783 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=94, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=21
+[INFO ] 2011-06-20 12:45:19,798 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:19,798 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1200
+[INFO ] 2011-06-20 12:45:37,022 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 12:45:37,522 method:cn.minihand.plantime.view.MainView.init(MainView.java:61)
+总共加载8个计划
+[INFO ] 2011-06-20 12:45:37,522 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:45:37,740 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:45:37,756 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:37,756 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=95, dayCompleteTime=0, weekCompleteTime=73, monthCompleteTime=73, yearCompleteTime=73, totalCompleteTime=85, lastUpdateTime=to_date('2011-06-19 13:46:42','yyyy-mm-dd hh24:mi:ss') where Time_id=22
+[INFO ] 2011-06-20 12:45:37,756 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:37,756 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=2400
+[INFO ] 2011-06-20 12:45:37,756 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:45:37,990 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:45:37,990 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:37,990 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=96, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:46:41','yyyy-mm-dd hh24:mi:ss') where Time_id=23
+[INFO ] 2011-06-20 12:45:38,005 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:38,005 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 12:45:38,005 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:45:38,224 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:45:38,224 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:38,224 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=97, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=24
+[INFO ] 2011-06-20 12:45:38,239 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:38,239 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 12:45:38,239 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:45:38,459 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:45:38,459 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:38,459 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=98, dayCompleteTime=0, weekCompleteTime=39, monthCompleteTime=39, yearCompleteTime=39, totalCompleteTime=47, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=25
+[INFO ] 2011-06-20 12:45:38,474 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:38,474 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=600
+[INFO ] 2011-06-20 12:45:38,474 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=99
+[INFO ] 2011-06-20 12:45:38,693 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=99
+[INFO ] 2011-06-20 12:45:38,693 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:38,693 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=99, dayCompleteTime=0, weekCompleteTime=40, monthCompleteTime=40, yearCompleteTime=40, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=26
+[INFO ] 2011-06-20 12:45:38,708 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:38,708 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=3600
+[INFO ] 2011-06-20 12:45:38,708 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=100
+[INFO ] 2011-06-20 12:45:38,927 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=100
+[INFO ] 2011-06-20 12:45:38,927 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:38,942 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=100, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=27
+[INFO ] 2011-06-20 12:45:38,942 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:38,942 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=3600
+[INFO ] 2011-06-20 12:45:38,942 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:45:39,176 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:45:39,176 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:39,176 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=93, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=20
+[INFO ] 2011-06-20 12:45:39,176 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:39,176 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1800
+[INFO ] 2011-06-20 12:45:39,192 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:45:39,410 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:45:39,426 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:45:39,426 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=94, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=21
+[INFO ] 2011-06-20 12:45:39,426 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:45:39,426 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1200
+[INFO ] 2011-06-20 12:47:05,510 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 12:47:06,010 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 12:47:06,010 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 12:47:06,010 method:cn.minihand.plantime.view.MainView.init(MainView.java:61)
+总共加载6个计划
+[INFO ] 2011-06-20 12:47:06,010 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:47:06,244 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 12:47:06,244 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:47:06,260 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=95, dayCompleteTime=0, weekCompleteTime=73, monthCompleteTime=73, yearCompleteTime=73, totalCompleteTime=85, lastUpdateTime=to_date('2011-06-19 13:46:42','yyyy-mm-dd hh24:mi:ss') where Time_id=22
+[INFO ] 2011-06-20 12:47:06,260 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:47:06,260 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=2400
+[INFO ] 2011-06-20 12:47:06,260 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:47:06,494 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 12:47:06,494 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:47:06,494 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=96, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:46:41','yyyy-mm-dd hh24:mi:ss') where Time_id=23
+[INFO ] 2011-06-20 12:47:06,494 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:47:06,494 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 12:47:06,494 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:47:06,728 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 12:47:06,728 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:47:06,728 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=97, dayCompleteTime=0, weekCompleteTime=41, monthCompleteTime=41, yearCompleteTime=41, totalCompleteTime=50, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=24
+[INFO ] 2011-06-20 12:47:06,776 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:47:06,776 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 12:47:06,791 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:47:07,010 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 12:47:07,010 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:47:07,010 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=98, dayCompleteTime=0, weekCompleteTime=39, monthCompleteTime=39, yearCompleteTime=39, totalCompleteTime=47, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=25
+[INFO ] 2011-06-20 12:47:07,010 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:47:07,025 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=600
+[INFO ] 2011-06-20 12:47:07,025 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:47:07,259 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 12:47:07,259 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:47:07,259 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=93, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=20
+[INFO ] 2011-06-20 12:47:07,259 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:47:07,259 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1800
+[INFO ] 2011-06-20 12:47:07,275 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:47:07,509 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 12:47:07,509 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 12:47:07,524 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=94, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=21
+[INFO ] 2011-06-20 12:47:07,524 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 12:47:07,524 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1200
+[INFO ] 2011-06-20 14:18:17,041 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,111 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-20 14:18:17,112 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:18:17,112 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-20 14:18:17,113 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-20 14:18:17,113 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-20 14:18:17,114 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,114 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-20 14:18:17,132 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:18:17,133 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-20 14:18:17,133 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-20 14:18:17,133 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-20 14:18:17,134 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,135 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-20 14:18:17,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:18:17,136 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-20 14:18:17,137 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-20 14:18:17,137 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-20 14:18:17,137 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,138 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-20 14:18:17,138 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:18:17,139 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-20 14:18:17,139 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:18:17,139 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-20 14:18:17,140 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,140 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-20 14:18:17,140 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:18:17,141 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-20 14:18:17,141 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:18:17,142 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-20 14:18:17,142 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,143 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-20 14:18:17,143 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:18:17,143 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-20 14:18:17,144 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-20 14:18:17,144 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-20 14:18:17,144 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,145 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-20 14:18:17,145 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-20 14:18:17,146 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-20 14:18:17,146 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:18:17,146 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-20 14:18:17,147 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:18:17,147 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:18:17,147 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-20 14:18:17,148 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-20 14:18:17,149 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:18:17,150 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-20 14:18:17,150 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 14:18:18,375 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 14:18:18,375 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:18:18,375 method:cn.minihand.plantime.view.MainView.init(MainView.java:66)
+总共加载6个计划
+[INFO ] 2011-06-20 14:18:18,415 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 14:18:18,667 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=95
+[INFO ] 2011-06-20 14:18:18,670 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=2393
+[INFO ] 2011-06-20 14:18:18,748 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 14:18:19,032 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=96
+[INFO ] 2011-06-20 14:18:19,035 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7195
+[INFO ] 2011-06-20 14:18:19,038 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 14:18:19,276 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=97
+[INFO ] 2011-06-20 14:18:19,279 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7198
+[INFO ] 2011-06-20 14:18:19,282 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 14:18:19,546 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=98
+[INFO ] 2011-06-20 14:18:19,548 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 14:18:19,551 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=98, dayCompleteTime=0, weekCompleteTime=39, monthCompleteTime=39, yearCompleteTime=39, totalCompleteTime=47, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=25
+[INFO ] 2011-06-20 14:18:19,564 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 14:18:19,564 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=600
+[INFO ] 2011-06-20 14:18:19,566 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 14:18:19,806 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=93
+[INFO ] 2011-06-20 14:18:19,809 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 14:18:19,810 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=93, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=49, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=20
+[INFO ] 2011-06-20 14:18:19,813 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 14:18:19,813 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1800
+[INFO ] 2011-06-20 14:18:19,815 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 14:18:20,055 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=94
+[INFO ] 2011-06-20 14:18:20,058 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:60)
+新的一天，时间重置
+[INFO ] 2011-06-20 14:18:20,059 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=94, dayCompleteTime=0, weekCompleteTime=42, monthCompleteTime=42, yearCompleteTime=42, totalCompleteTime=48, lastUpdateTime=to_date('2011-06-19 13:50:25','yyyy-mm-dd hh24:mi:ss') where Time_id=21
+[INFO ] 2011-06-20 14:18:20,111 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:66)
+新的一周，时间重置
+[INFO ] 2011-06-20 14:18:20,112 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1200
+[INFO ] 2011-06-20 14:22:42,964 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,968 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-06-20 14:22:42,968 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:22:42,969 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-06-20 14:22:42,969 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-06-20 14:22:42,970 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-06-20 14:22:42,970 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,971 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-06-20 14:22:42,971 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:22:42,972 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-06-20 14:22:42,973 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-06-20 14:22:42,974 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-06-20 14:22:42,974 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,975 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-06-20 14:22:42,975 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:22:42,975 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-06-20 14:22:42,976 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-06-20 14:22:42,976 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-06-20 14:22:42,976 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,977 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-06-20 14:22:42,977 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:22:42,978 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-20 14:22:42,978 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:22:42,978 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-20 14:22:42,979 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,979 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-06-20 14:22:42,980 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:22:42,981 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-06-20 14:22:42,981 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:22:42,981 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-06-20 14:22:42,982 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,982 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-06-20 14:22:42,982 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-06-20 14:22:42,983 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-06-20 14:22:42,983 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-06-20 14:22:42,984 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-06-20 14:22:42,984 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,984 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-06-20 14:22:42,985 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-20 14:22:42,985 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-20 14:22:42,986 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:22:42,986 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-20 14:22:42,987 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-06-20 14:22:42,988 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:22:42,988 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-06-20 14:22:42,988 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-06-20 14:22:42,989 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-06-20 14:22:42,989 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-06-20 14:22:42,989 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[ERROR] 2011-06-20 14:22:43,591 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_time数据失败!
+[ERROR] 2011-06-20 14:22:43,907 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_week数据失败!
+[ERROR] 2011-06-20 14:22:44,204 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:129)
+删除表t_plan数据失败!
+[INFO ] 2011-06-20 14:22:44,206 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[INFO ] 2011-06-20 14:22:44,345 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,346 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='英语相关'
+[INFO ] 2011-06-20 14:22:44,372 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,101,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,622 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,623 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[INFO ] 2011-06-20 14:22:44,626 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,626 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='网络资讯'
+[INFO ] 2011-06-20 14:22:44,630 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,102,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,633 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,633 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[INFO ] 2011-06-20 14:22:44,683 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,684 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='IT网站'
+[INFO ] 2011-06-20 14:22:44,694 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,103,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,703 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,704 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[INFO ] 2011-06-20 14:22:44,707 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,708 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='看书'
+[INFO ] 2011-06-20 14:22:44,712 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,104,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,715 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,716 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[INFO ] 2011-06-20 14:22:44,718 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,719 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-06-20 14:22:44,725 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,105,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,729 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,731 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[INFO ] 2011-06-20 14:22:44,736 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,737 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='聊天'
+[INFO ] 2011-06-20 14:22:44,743 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,106,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,747 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,748 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[INFO ] 2011-06-20 14:22:44,786 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,786 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='围棋'
+[INFO ] 2011-06-20 14:22:44,790 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,107,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,792 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,793 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[INFO ] 2011-06-20 14:22:44,796 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:44,796 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[INFO ] 2011-06-20 14:22:44,800 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:89)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,108,0,0,0,0,0)
+[INFO ] 2011-06-20 14:22:44,805 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:108)
+insert success!
+[INFO ] 2011-06-20 14:22:54,587 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 14:22:54,829 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 14:22:54,830 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:22:54,830 method:cn.minihand.plantime.view.MainView.init(MainView.java:66)
+总共加载6个计划
+[INFO ] 2011-06-20 14:22:54,833 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:22:55,130 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:22:55,133 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=2400
+[INFO ] 2011-06-20 14:22:55,136 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:22:55,380 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:22:55,383 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 14:22:55,385 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:22:55,671 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:22:55,675 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=7200
+[INFO ] 2011-06-20 14:22:55,677 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:22:55,923 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:22:55,926 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=600
+[INFO ] 2011-06-20 14:22:55,928 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:22:56,173 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:22:56,177 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1800
+[INFO ] 2011-06-20 14:22:56,180 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:22:56,419 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:22:56,422 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:70)
+leftTime=1200
+[INFO ] 2011-06-20 14:34:59,449 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 14:34:59,949 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 14:34:59,949 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:34:59,964 method:cn.minihand.plantime.view.MainView.init(MainView.java:66)
+总共加载6个计划
+[INFO ] 2011-06-20 14:34:59,964 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:35:00,245 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:35:00,245 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=2400
+[INFO ] 2011-06-20 14:35:00,245 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:35:00,479 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:35:00,479 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=3600
+[INFO ] 2011-06-20 14:35:00,479 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:35:00,714 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:35:00,714 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=3600
+[INFO ] 2011-06-20 14:35:00,714 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:35:00,964 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:35:00,964 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=600
+[INFO ] 2011-06-20 14:35:00,979 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[ERROR] 2011-06-20 14:35:01,042 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:139)
+ qzf getConnection come here3.... e1.getMessage()=Cannot create PoolableConnectionFactory (Io 异常: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169870080)(ERR=12519)(ERROR_STACK=(ERROR=(CODE=12519)(EMFI=4)))))
+[ERROR] 2011-06-20 14:35:01,042 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:147)
+ qzf getConnection come here5 null
+[INFO ] 2011-06-20 14:35:19,256 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 14:35:19,772 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 14:35:19,772 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:35:19,772 method:cn.minihand.plantime.view.MainView.init(MainView.java:66)
+总共加载6个计划
+[INFO ] 2011-06-20 14:35:19,772 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:35:20,006 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:35:20,006 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=2400
+[INFO ] 2011-06-20 14:35:20,006 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:35:20,240 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:35:20,240 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=3600
+[INFO ] 2011-06-20 14:35:20,255 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:35:20,474 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:35:20,474 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=3600
+[INFO ] 2011-06-20 14:35:20,474 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:35:20,693 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:35:20,709 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=600
+[INFO ] 2011-06-20 14:35:20,709 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:35:20,927 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:35:20,943 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=1800
+[INFO ] 2011-06-20 14:35:20,943 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:35:21,161 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:35:21,161 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:72)
+leftTime=1200
+[INFO ] 2011-06-20 14:37:02,055 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 14:37:02,555 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 14:37:02,555 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:37:02,555 method:cn.minihand.plantime.view.MainView.init(MainView.java:66)
+总共加载6个计划
+[INFO ] 2011-06-20 14:37:02,570 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:37:02,789 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:37:02,804 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 14:37:02,804 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 14:37:02,804 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:37:03,038 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:37:03,038 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 14:37:03,038 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 14:37:03,038 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:37:03,257 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:37:03,272 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 14:37:03,272 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 14:37:03,272 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:37:03,507 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:37:03,507 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 14:37:03,507 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 14:37:03,523 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:37:03,741 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:37:03,741 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 14:37:03,741 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 14:37:03,757 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:37:03,975 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:37:03,975 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 14:37:03,975 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 14:37:08,864 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 14:37:09,364 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 14:37:09,364 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 14:37:09,364 method:cn.minihand.plantime.view.MainView.init(MainView.java:66)
+总共加载6个计划
+[INFO ] 2011-06-20 14:37:09,364 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:37:09,598 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 14:37:09,614 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=2400
+[INFO ] 2011-06-20 14:37:09,614 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 14:37:09,614 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:37:09,832 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 14:37:09,832 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=3600
+[INFO ] 2011-06-20 14:37:09,832 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=3600
+[INFO ] 2011-06-20 14:37:09,848 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:37:10,066 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 14:37:10,082 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=3600
+[INFO ] 2011-06-20 14:37:10,082 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=3600
+[INFO ] 2011-06-20 14:37:10,082 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:37:10,301 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 14:37:10,317 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=600
+[INFO ] 2011-06-20 14:37:10,317 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 14:37:10,317 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:37:10,535 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 14:37:10,535 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=1800
+[INFO ] 2011-06-20 14:37:10,535 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 14:37:10,535 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:37:10,769 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 14:37:10,769 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=1200
+[INFO ] 2011-06-20 14:37:10,769 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 16:07:38,755 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 16:07:39,758 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 16:07:39,759 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 16:07:39,759 method:cn.minihand.plantime.view.MainView.init(MainView.java:80)
+总共加载6个计划
+[INFO ] 2011-06-20 16:07:39,810 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 16:07:40,053 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 16:07:40,056 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 16:07:40,056 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 16:07:40,111 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 16:07:40,354 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 16:07:40,359 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 16:07:40,360 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 16:07:40,362 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 16:07:40,649 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 16:07:40,655 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 16:07:40,655 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 16:07:40,657 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 16:07:40,903 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 16:07:40,906 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 16:07:40,907 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 16:07:40,909 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 16:07:41,155 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 16:07:41,159 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 16:07:41,159 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 16:07:41,162 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 16:07:41,428 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 16:07:41,431 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 16:07:41,431 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 16:11:30,116 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 16:11:30,628 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 16:11:30,629 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 16:11:30,629 method:cn.minihand.plantime.view.MainView.init(MainView.java:80)
+总共加载6个计划
+[INFO ] 2011-06-20 16:11:30,634 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 16:11:31,022 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 16:11:31,025 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 16:11:31,026 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 16:11:31,030 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 16:11:31,302 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 16:11:31,305 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 16:11:31,306 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 16:11:31,312 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 16:11:31,558 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 16:11:31,563 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 16:11:31,563 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 16:11:31,565 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 16:11:31,801 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 16:11:31,806 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 16:11:31,807 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 16:11:31,808 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 16:11:32,047 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 16:11:32,050 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 16:11:32,051 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 16:11:32,053 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 16:11:32,345 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 16:11:32,348 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 16:11:32,349 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 16:19:36,732 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 16:19:37,232 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 16:19:37,232 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 16:19:37,232 method:cn.minihand.plantime.view.MainView.init(MainView.java:84)
+总共加载6个计划
+[INFO ] 2011-06-20 16:19:37,248 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 16:19:37,466 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 16:19:37,482 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=2400
+[INFO ] 2011-06-20 16:19:37,482 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 16:19:37,482 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 16:19:37,762 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 16:19:37,762 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=3600
+[INFO ] 2011-06-20 16:19:37,762 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=3600
+[INFO ] 2011-06-20 16:19:37,762 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 16:19:37,997 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 16:19:37,997 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=3600
+[INFO ] 2011-06-20 16:19:37,997 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=3600
+[INFO ] 2011-06-20 16:19:37,997 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 16:19:38,231 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 16:19:38,231 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=600
+[INFO ] 2011-06-20 16:19:38,231 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 16:19:38,231 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 16:19:38,465 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 16:19:38,465 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=1800
+[INFO ] 2011-06-20 16:19:38,465 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 16:19:38,465 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 16:19:38,699 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 16:19:38,699 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:60)
+加班，计划时间=1200
+[INFO ] 2011-06-20 16:19:38,699 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 17:10:47,898 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 17:10:49,146 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 17:10:49,147 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 17:10:49,147 method:cn.minihand.plantime.view.MainView.init(MainView.java:84)
+总共加载6个计划
+[INFO ] 2011-06-20 17:10:49,184 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:10:49,427 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:10:49,430 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 17:10:49,430 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 17:10:49,434 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:10:49,675 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:10:49,678 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:10:49,680 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:10:49,682 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:10:49,969 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:10:49,974 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:10:49,975 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:10:49,976 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:10:50,223 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:10:50,227 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 17:10:50,227 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 17:10:50,229 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:10:50,469 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:10:50,473 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 17:10:50,473 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 17:10:50,475 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:10:50,949 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:10:50,952 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 17:10:50,952 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 17:12:11,587 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 17:12:12,188 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 17:12:12,188 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 17:12:12,189 method:cn.minihand.plantime.view.MainView.init(MainView.java:84)
+总共加载6个计划
+[INFO ] 2011-06-20 17:12:12,263 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:12:12,502 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:12:12,505 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 17:12:12,507 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 17:12:12,509 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:12:12,752 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:12:12,758 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:12:12,758 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:12:12,760 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:12:12,997 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:12:13,000 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:12:13,000 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:12:13,002 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:12:13,252 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:12:13,255 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 17:12:13,255 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 17:12:13,257 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:12:13,560 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:12:13,563 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 17:12:13,564 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 17:12:13,566 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:12:13,825 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:12:13,828 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 17:12:13,829 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1200
+[INFO ] 2011-06-20 17:12:17,914 method:cn.minihand.plantime.view.PlanView.actionPerformed(PlanView.java:203)
+本次新增3秒
+[INFO ] 2011-06-20 17:12:17,915 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=102, dayCompleteTime=3, weekCompleteTime=3, monthCompleteTime=3, yearCompleteTime=3, totalCompleteTime=6, lastUpdateTime=to_date('2011-06-20 17:12:17','yyyy-mm-dd hh24:mi:ss') where Time_id=29
+[INFO ] 2011-06-20 17:12:34,212 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 17:12:34,754 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 17:12:34,754 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 17:12:34,755 method:cn.minihand.plantime.view.MainView.init(MainView.java:84)
+总共加载6个计划
+[INFO ] 2011-06-20 17:12:34,800 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:12:35,040 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:12:35,043 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 17:12:35,043 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 17:12:35,047 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:12:35,281 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:12:35,286 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:12:35,286 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:12:35,288 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:12:35,518 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:12:35,523 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:12:35,523 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:12:35,525 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:12:35,776 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:12:35,780 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 17:12:35,780 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 17:12:35,782 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:12:36,055 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:12:36,059 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 17:12:36,059 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 17:12:36,061 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:12:36,313 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:12:36,317 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 17:12:36,317 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1197
+[INFO ] 2011-06-20 17:13:12,108 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:412)
+select * from T_Plan
+[INFO ] 2011-06-20 17:13:12,630 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-06-20 17:13:12,631 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-06-20 17:13:12,631 method:cn.minihand.plantime.view.MainView.init(MainView.java:84)
+总共加载6个计划
+[INFO ] 2011-06-20 17:13:12,680 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:13:12,977 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=103
+[INFO ] 2011-06-20 17:13:12,980 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=2400
+[INFO ] 2011-06-20 17:13:12,980 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=2400
+[INFO ] 2011-06-20 17:13:12,985 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:13:13,256 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=104
+[INFO ] 2011-06-20 17:13:13,261 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:13:13,262 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:13:13,263 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:13:13,500 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=105
+[INFO ] 2011-06-20 17:13:13,505 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=7200
+[INFO ] 2011-06-20 17:13:13,505 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=7200
+[INFO ] 2011-06-20 17:13:13,507 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:13:13,744 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=106
+[INFO ] 2011-06-20 17:13:13,747 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=600
+[INFO ] 2011-06-20 17:13:13,747 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=600
+[INFO ] 2011-06-20 17:13:13,749 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:13:13,999 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=101
+[INFO ] 2011-06-20 17:13:14,002 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1800
+[INFO ] 2011-06-20 17:13:14,003 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1800
+[INFO ] 2011-06-20 17:13:14,005 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:13:14,252 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:282)
+select * from T_Time where plan_id=102
+[INFO ] 2011-06-20 17:13:14,256 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:61)
+新的一天，时间重置
+[INFO ] 2011-06-20 17:13:17,941 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:379)
+update T_Time set plan_id=102, dayCompleteTime=0, weekCompleteTime=3, monthCompleteTime=3, yearCompleteTime=3, totalCompleteTime=6, lastUpdateTime=to_date('2011-06-19 17:12:17','yyyy-mm-dd hh24:mi:ss') where Time_id=29
+[INFO ] 2011-06-20 17:13:17,990 method:cn.minihand.plantime.manager.impl.TimeManagerImpl.validatePlanTime(TimeManagerImpl.java:73)
+新的一周，时间重置
+[INFO ] 2011-06-20 17:13:17,991 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:63)
+不加班，计划时间=1200
+[INFO ] 2011-06-20 17:13:17,991 method:cn.minihand.plantime.view.PlanView.<init>(PlanView.java:74)
+leftTime=1197

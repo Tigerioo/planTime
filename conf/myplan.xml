@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plans>
+	<plan>
+		<!-- 计划名字 -->
+		<planName>英语相关</planName>
+		<!-- 执行周期:day,week,month -->
+		<planType>DAY</planType>
+		<!-- 正常需要完成的时间：单位：分钟 -->
+		<planTime>90</planTime>
+		<!-- 加班需要完成的时间 -->
+		<overPlanTime>60</overPlanTime>
+		<!-- 周末需要完成的时间 -->
+		<weekendPlanTime>240</weekendPlanTime>
+	</plan>
+	<plan>
+		<!-- 计划名字 -->
+		<planName>历史、地理、军事视频and书籍</planName>
+		<!-- 执行周期:day,week,month -->
+		<planType>day</planType>
+		<!-- 正常需要完成的时间：单位：分钟 -->
+		<planTime>90</planTime>
+		<!-- 加班需要完成的时间 -->
+		<overPlanTime>60</overPlanTime>
+		<!-- 周末需要完成的时间 -->
+		<weekendPlanTime>120</weekendPlanTime>
+	</plan>
+	<plan>
+		<!-- 计划名字 -->
+		<planName>看技术类书</planName>
+		<!-- 执行周期:day,week,month -->
+		<planType></planType>
+		<!-- 正常需要完成的时间：单位：分钟 -->
+		<planTime>90</planTime>
+		<!-- 加班需要完成的时间 -->
+		<overPlanTime>30</overPlanTime>
+		<!-- 周末需要完成的时间 -->
+		<weekendPlanTime>180</weekendPlanTime>
+	</plan>
+	<plan>
+		<!-- 计划名字 -->
+		<planName>编程</planName>
+		<!-- 执行周期:day,week,month -->
+		<planType>DAY</planType>
+		<!-- 正常需要完成的时间：单位：分钟 -->
+		<planTime>90</planTime>
+		<!-- 加班需要完成的时间 -->
+		<overPlanTime>60</overPlanTime>
+		<!-- 周末需要完成的时间 -->
+		<weekendPlanTime>240</weekendPlanTime>
+	</plan>
+</plans>

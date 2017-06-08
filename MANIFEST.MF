@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: lib/commons-collections.jar lib/commons-dbcp-1.2.1.jar lib
+ /commons-logging.jar lib/commons-pool.jar lib/dom4j-1.6.1.jar lib/log
+ 4j-1.2.15.jar lib/ojdbc14.jar lib/mail.jar lib/newlandBgCommonTool.ja
+ r
+Main-Class: cn.minihand.plantime.view.MainView
+

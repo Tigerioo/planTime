@@ -1,0 +1,48 @@
+[INFO ] 2011-07-21 21:47:42,980 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:416)
+select * from T_Plan
+[INFO ] 2011-07-21 21:47:43,746 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-07-21 21:47:43,746 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-07-21 21:47:43,792 method:cn.minihand.plantime.view.MainView.drawComboBox(MainView.java:92)
+总共加载6个计划
+[INFO ] 2011-07-21 21:47:48,129 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:284)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-07-21 21:47:48,193 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:284)
+select * from T_Time where plan_id=13
+[INFO ] 2011-07-21 21:47:48,208 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:284)
+select * from T_Time where plan_id=13
+[INFO ] 2011-07-21 21:47:48,208 method:cn.minihand.plantime.view.PlanView.draw(PlanView.java:58)
+本日执行时间为0分钟
+[INFO ] 2011-07-21 21:47:48,208 method:cn.minihand.plantime.view.PlanView.draw(PlanView.java:68)
+不加班，'做项目'计划时间=7200
+[INFO ] 2011-07-21 21:47:48,208 method:cn.minihand.plantime.view.PlanView.draw(PlanView.java:79)
+本日第一次执行，剩余时间为：120分钟
+[INFO ] 2011-07-21 21:47:49,877 method:cn.minihand.plantime.view.PlanView.windowClosing(PlanView.java:231)
+updateTime = tempPlanTime-leftTime-tempTime --->0=7200-7200-0
+[INFO ] 2011-07-21 21:47:57,461 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:416)
+select * from T_Plan
+[INFO ] 2011-07-21 21:47:57,977 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：围棋
+[INFO ] 2011-07-21 21:47:57,977 method:cn.minihand.plantime.manager.impl.PlanManagerImpl.findByDate(PlanManagerImpl.java:64)
+今天不是周末，移除计划：历史、地理、军事视频and书籍
+[INFO ] 2011-07-21 21:47:57,977 method:cn.minihand.plantime.view.MainView.drawComboBox(MainView.java:92)
+总共加载6个计划
+[INFO ] 2011-07-21 21:48:03,749 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:284)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-07-21 21:48:03,764 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:284)
+select * from T_Time where plan_id=13
+[INFO ] 2011-07-21 21:48:03,764 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:284)
+select * from T_Time where plan_id=13
+[INFO ] 2011-07-21 21:48:03,780 method:cn.minihand.plantime.view.PlanView.draw(PlanView.java:58)
+本日执行时间为0分钟
+[INFO ] 2011-07-21 21:48:03,780 method:cn.minihand.plantime.view.PlanView.draw(PlanView.java:65)
+加班，'做项目'计划时间=3600
+[INFO ] 2011-07-21 21:48:03,780 method:cn.minihand.plantime.view.PlanView.draw(PlanView.java:79)
+本日第一次执行，剩余时间为：60分钟
+[INFO ] 2011-07-21 21:48:08,882 method:cn.minihand.plantime.view.PlanView.actionPerformed(PlanView.java:217)
+updateTime = tempPlanTime-leftTime-tempTime --->4=3600-3596-0
+[INFO ] 2011-07-21 21:48:08,882 method:cn.minihand.plantime.view.PlanView.actionPerformed(PlanView.java:219)
+做项目,本次通过暂停新增0分钟4秒
+[INFO ] 2011-07-21 21:48:08,898 method:cn.minihand.plantime.util.JDBCTemplate.update(JDBCTemplate.java:383)
+update T_Time set monthCompleteTime=4, weekCompleteTime=4, lastUpdateTime=to_date('2011-07-21 21:48:08','yyyy-mm-dd hh24:mi:ss'), yearCompleteTime=4, dayCompleteTime=4, totalCompleteTime=8, plan_id=13 where Time_id=13

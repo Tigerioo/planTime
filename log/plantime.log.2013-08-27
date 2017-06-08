@@ -1,0 +1,6 @@
+[INFO ] 2013-08-27 19:46:03,666 method:cn.minihand.plantime.util.JDBCTemplate.findAll(JDBCTemplate.java:420)
+select * from T_Plan
+[ERROR] 2013-08-27 19:46:03,962 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:143)
+ qzf getConnection come here3.... e1.getMessage()=Cannot create PoolableConnectionFactory (Io “Ï≥£: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169870080)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4)))))
+[ERROR] 2013-08-27 19:46:03,963 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:151)
+ qzf getConnection come here5 null

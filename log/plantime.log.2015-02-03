@@ -1,0 +1,4 @@
+[ERROR] 2015-02-03 17:20:55,537 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-02-03 17:20:55,541 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)

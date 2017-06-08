@@ -1,0 +1,478 @@
+[INFO ] 2011-07-04 16:28:01,562 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,753 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-07-04 16:28:01,754 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:28:01,755 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-07-04 16:28:01,755 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-07-04 16:28:01,760 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-07-04 16:28:01,760 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,761 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-07-04 16:28:01,761 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:28:01,782 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-07-04 16:28:01,783 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-07-04 16:28:01,783 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-07-04 16:28:01,784 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,784 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-07-04 16:28:01,784 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:28:01,784 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-07-04 16:28:01,785 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-07-04 16:28:01,785 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-07-04 16:28:01,785 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,786 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-07-04 16:28:01,786 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:28:01,786 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:28:01,787 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:28:01,787 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:28:01,787 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,787 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-07-04 16:28:01,789 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:28:01,790 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:28:01,790 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:28:01,790 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:28:01,790 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,790 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-07-04 16:28:01,791 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:28:01,791 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-07-04 16:28:01,791 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-07-04 16:28:01,791 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-07-04 16:28:01,792 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,792 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-07-04 16:28:01,792 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:28:01,793 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:28:01,793 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:28:01,793 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:28:01,793 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:28:01,794 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-07-04 16:28:01,794 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:28:01,794 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:28:01,794 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:28:01,794 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:28:01,795 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-07-04 16:29:24,867 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,901 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-07-04 16:29:24,901 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:29:24,901 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-07-04 16:29:24,902 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-07-04 16:29:24,903 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-07-04 16:29:24,903 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,903 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-07-04 16:29:24,904 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:29:24,904 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-07-04 16:29:24,904 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-07-04 16:29:24,904 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-07-04 16:29:24,905 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,905 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-07-04 16:29:24,905 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:29:24,906 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-07-04 16:29:24,906 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-07-04 16:29:24,906 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-07-04 16:29:24,906 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,907 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-07-04 16:29:24,907 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:29:24,907 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:29:24,907 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:29:24,908 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:29:24,908 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,908 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-07-04 16:29:24,908 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:29:24,910 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:29:24,910 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:29:24,910 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:29:24,910 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,910 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-07-04 16:29:24,911 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:29:24,911 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-07-04 16:29:24,911 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-07-04 16:29:24,911 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-07-04 16:29:24,912 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,912 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-07-04 16:29:24,912 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:29:24,912 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:29:24,912 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:29:24,913 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:29:24,913 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:29:24,913 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-07-04 16:29:24,913 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:29:24,913 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:29:24,914 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:29:24,914 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:29:24,914 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-07-04 16:30:17,054 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,060 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-07-04 16:30:17,060 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:30:17,061 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-07-04 16:30:17,061 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-07-04 16:30:17,061 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-07-04 16:30:17,062 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,062 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-07-04 16:30:17,063 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:30:17,063 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-07-04 16:30:17,063 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-07-04 16:30:17,064 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-07-04 16:30:17,064 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,064 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-07-04 16:30:17,065 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:30:17,065 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-07-04 16:30:17,066 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-07-04 16:30:17,066 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-07-04 16:30:17,066 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,067 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-07-04 16:30:17,067 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:30:17,067 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:30:17,067 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:30:17,067 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:30:17,068 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,068 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-07-04 16:30:17,068 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:30:17,070 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:30:17,070 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:30:17,070 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:30:17,070 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,072 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-07-04 16:30:17,072 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:30:17,072 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-07-04 16:30:17,073 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-07-04 16:30:17,073 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-07-04 16:30:17,073 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,074 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-07-04 16:30:17,074 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:30:17,074 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:30:17,074 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:30:17,075 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:30:17,075 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:30:17,075 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-07-04 16:30:17,076 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:30:17,076 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:30:17,076 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:30:17,076 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:30:17,076 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-07-04 16:35:18,453 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,470 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:英语相关
+[INFO ] 2011-07-04 16:35:18,471 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:35:18,472 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:30
+[INFO ] 2011-07-04 16:35:18,472 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:30
+[INFO ] 2011-07-04 16:35:18,473 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:120
+[INFO ] 2011-07-04 16:35:18,473 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,474 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:网络资讯
+[INFO ] 2011-07-04 16:35:18,474 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:35:18,491 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:20
+[INFO ] 2011-07-04 16:35:18,491 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:20
+[INFO ] 2011-07-04 16:35:18,492 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:40
+[INFO ] 2011-07-04 16:35:18,495 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,496 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:IT网站
+[INFO ] 2011-07-04 16:35:18,496 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:35:18,497 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:40
+[INFO ] 2011-07-04 16:35:18,497 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:40
+[INFO ] 2011-07-04 16:35:18,497 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:90
+[INFO ] 2011-07-04 16:35:18,498 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,498 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:看书
+[INFO ] 2011-07-04 16:35:18,498 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:35:18,499 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:35:18,499 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:35:18,500 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:35:18,500 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,500 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:做项目
+[INFO ] 2011-07-04 16:35:18,501 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:35:18,516 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:120
+[INFO ] 2011-07-04 16:35:18,517 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:35:18,517 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:240
+[INFO ] 2011-07-04 16:35:18,518 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,518 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:聊天
+[INFO ] 2011-07-04 16:35:18,518 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:DAY
+[INFO ] 2011-07-04 16:35:18,519 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:10
+[INFO ] 2011-07-04 16:35:18,519 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:10
+[INFO ] 2011-07-04 16:35:18,519 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:30
+[INFO ] 2011-07-04 16:35:18,520 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,520 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:围棋
+[INFO ] 2011-07-04 16:35:18,521 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:35:18,521 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:35:18,521 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:35:18,522 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:35:18,522 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:38)
+begin read nodeElement...
+[INFO ] 2011-07-04 16:35:18,522 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planName:历史、地理、军事视频and书籍
+[INFO ] 2011-07-04 16:35:18,523 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planType:week
+[INFO ] 2011-07-04 16:35:18,523 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+planTime:60
+[INFO ] 2011-07-04 16:35:18,524 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+overPlanTime:60
+[INFO ] 2011-07-04 16:35:18,524 method:cn.minihand.plantime.util.XmlUtil.readXml(XmlUtil.java:57)
+weekendPlanTime:60
+[INFO ] 2011-07-04 16:35:18,524 method:cn.minihand.plantime.util.InitializePlan.init(InitializePlan.java:29)
+成功读取plan,总共8个
+[INFO ] 2011-07-04 16:35:20,440 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:131)
+删除表t_time数据成功!
+[INFO ] 2011-07-04 16:35:20,452 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:131)
+删除表t_week数据成功!
+[INFO ] 2011-07-04 16:35:20,487 method:cn.minihand.plantime.util.JDBCTemplate.deleteAll(JDBCTemplate.java:131)
+删除表t_plan数据成功!
+[INFO ] 2011-07-04 16:35:20,488 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'英语相关','DAY',1800,1800,7200)
+[INFO ] 2011-07-04 16:35:20,610 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:20,611 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='英语相关'
+[INFO ] 2011-07-04 16:35:21,351 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,1,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,394 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,395 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'网络资讯','DAY',1200,1200,2400)
+[INFO ] 2011-07-04 16:35:21,426 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,427 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='网络资讯'
+[INFO ] 2011-07-04 16:35:21,434 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,2,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,575 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,576 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'IT网站','DAY',2400,2400,5400)
+[INFO ] 2011-07-04 16:35:21,579 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,579 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='IT网站'
+[INFO ] 2011-07-04 16:35:21,583 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,3,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,586 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,587 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'看书','DAY',7200,3600,14400)
+[INFO ] 2011-07-04 16:35:21,590 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,590 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='看书'
+[INFO ] 2011-07-04 16:35:21,595 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,4,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,617 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,618 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'做项目','DAY',7200,3600,14400)
+[INFO ] 2011-07-04 16:35:21,621 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,621 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='做项目'
+[INFO ] 2011-07-04 16:35:21,627 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,5,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,630 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,633 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'聊天','DAY',600,600,1800)
+[INFO ] 2011-07-04 16:35:21,636 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,636 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='聊天'
+[INFO ] 2011-07-04 16:35:21,642 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,6,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,645 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,646 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'围棋','week',3600,3600,3600)
+[INFO ] 2011-07-04 16:35:21,649 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,649 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='围棋'
+[INFO ] 2011-07-04 16:35:21,653 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,7,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,698 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,699 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Plan(plan_id,planName,planType,planTime,overPlanTime,weekendPlanTime) values(seq_plan.nextval,'历史、地理、军事视频and书籍','week',3600,3600,3600)
+[INFO ] 2011-07-04 16:35:21,702 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!
+[INFO ] 2011-07-04 16:35:21,702 method:cn.minihand.plantime.util.JDBCTemplate.findByField(JDBCTemplate.java:294)
+select * from T_Plan where planName='历史、地理、军事视频and书籍'
+[INFO ] 2011-07-04 16:35:21,706 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:93)
+insert into T_Time(time_id,plan_id,dayCompleteTime,weekCompleteTime,monthCompleteTime,yearCompleteTime,totalCompleteTime) values(seq_time.nextval,8,0,0,0,0,0)
+[INFO ] 2011-07-04 16:35:21,713 method:cn.minihand.plantime.util.JDBCTemplate.add(JDBCTemplate.java:112)
+insert success!

@@ -1,0 +1,26 @@
+[ERROR] 2013-08-27 19:46:03,962 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:143)
+ qzf getConnection come here3.... e1.getMessage()=Cannot create PoolableConnectionFactory (Io 异常: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169870080)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4)))))
+[ERROR] 2013-08-27 19:46:03,963 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:151)
+ qzf getConnection come here5 null
+[ERROR] 2015-02-03 17:20:55,537 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-02-03 17:20:55,541 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-02-04 10:07:50,678 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-02-09 14:52:46,389 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:143)
+ qzf getConnection come here3.... e1.getMessage()=Cannot create PoolableConnectionFactory (Io 异常: Connection refused(DESCRIPTION=(TMP=)(VSNNUM=169870080)(ERR=12505)(ERROR_STACK=(ERROR=(CODE=12505)(EMFI=4)))))
+[ERROR] 2015-02-09 14:52:46,390 method:cn.minihand.plantime.util.DbManager.getConn(DbManager.java:151)
+ qzf getConnection come here5 null
+[ERROR] 2015-02-09 15:40:35,633 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-02-09 15:40:35,637 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-04-13 10:25:53,346 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-04-13 10:25:53,361 method:cn.minihand.plantime.util.PropertyUtil.getProperty(PropertyUtil.java:40)
+java.io.FileNotFoundException: .\server.properties (系统找不到指定的文件。)
+[ERROR] 2015-04-13 10:29:59,968 method:cn.minihand.plantime.experience.ExperienceManager.sendUpFileToServer(ExperienceManager.java:269)
+can't not connect to server!
+[ERROR] 2015-04-13 10:30:03,956 method:cn.minihand.plantime.experience.ExperienceManager.sendUpFileToServer(ExperienceManager.java:269)
+can't not connect to server!
