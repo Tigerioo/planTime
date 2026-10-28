@@ -41,7 +41,7 @@ public class MainView implements ActionListener, KeyListener {
 	private static JFrame frame;
 	private JPanel panel, panel2;
 	private JMenuItem startItem,expItem;//TomatoTime Menu
-	private JMenuItem aboutMe, sync;//Help Menu
+	private JMenuItem aboutMe, reset;//Help Menu
 	private JPanel outPanel;
 	private TimeManager timeManager = new TimeManagerImpl();
 	private JLabel today, week, month, all;
@@ -51,26 +51,26 @@ public class MainView implements ActionListener, KeyListener {
 		
 		JMenuBar menuBar = new JMenuBar();
 		frame.setJMenuBar(menuBar);
-		JMenu editMenu = new JMenu("TomatoTime");
+		JMenu editMenu = new JMenu(" 计时器");
 		
-		startItem = new JMenuItem("start");
+		startItem = new JMenuItem("新建");
 		startItem.addActionListener(this);
 		editMenu.add(startItem);
 		
-		expItem = new JMenuItem("exp");
+		expItem = new JMenuItem("统计");
 		expItem.addActionListener(this);
 		editMenu.add(expItem);
 		
 		menuBar.add(editMenu);
 		
-		JMenu helpMenu = new JMenu("Help");
+		JMenu helpMenu = new JMenu("帮助");
 		
-		//add sync menu
-		sync = new JMenuItem("Sync");
-		sync.addActionListener(this);
-		helpMenu.add(sync);
+		//add reset menu
+		reset = new JMenuItem("重置");
+		reset.addActionListener(this);
+		helpMenu.add(reset);
 		
-		aboutMe = new JMenuItem("aboutMe");
+		aboutMe = new JMenuItem("关于");
 		aboutMe.addActionListener(this);
 		helpMenu.add(aboutMe);
 		
@@ -164,7 +164,7 @@ public class MainView implements ActionListener, KeyListener {
 			
 		}
 		
-		if(e.getSource() == sync){
+		if(e.getSource() == reset){
 			logger.info("send upfile to server......");
 			String result = ExperienceManager.sendUpFileToServer();
 			JOptionPane.showMessageDialog(frame, result);
@@ -197,7 +197,7 @@ public class MainView implements ActionListener, KeyListener {
 		private int count;//用于计数，2个25分钟要起来活动活动
 		private String preTime;//前一个记录的时间
 		private JMenuItem startItem,expItem;//TomatoTime Menu
-//		private JMenuItem aboutMe, sync;//Help Menu
+//		private JMenuItem aboutMe, reset;//Help Menu
 
 		public void run() {
 			try {
@@ -367,8 +367,8 @@ public class MainView implements ActionListener, KeyListener {
 				JOptionPane.showMessageDialog(timeFrame, "当前等级" + ExperienceManager.getCurrentLevel() + ", 经验值：" + ExperienceManager.getCurrentExpInfo());
 			}
 			
-			if(e.getSource() == sync){
-				System.out.println("sync");
+			if(e.getSource() == reset){
+				System.out.println("reset");
 			}
 			
 			if(e.getSource() == aboutMe){

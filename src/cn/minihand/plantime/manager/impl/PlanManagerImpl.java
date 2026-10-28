@@ -71,7 +71,7 @@ public class PlanManagerImpl implements PlanManager{
 		}
 		return temp;
 	}
-
+	
 	public Plan findByPlanName(String planName) {
 		Plan plan = (Plan)this.template.findByField(new Plan(), "planName", planName);
 		return plan;
